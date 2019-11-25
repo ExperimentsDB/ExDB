@@ -17,5 +17,5 @@ deploy:
   provider: heroku
   api_key:
     secure: 0ffd368e-0b5d-4a06-bb99-26451665d31e
-  app: dbob
+  app: experimentsdb
   skip_cleanup: true
