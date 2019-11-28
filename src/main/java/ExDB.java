@@ -1,3 +1,5 @@
+import HTML.*;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +14,9 @@ import java.util.stream.Collectors;
 public class ExDB extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().write("Hello World");
+        HTML html = new HTML();
+        html.addtoBody(new TagHeader());
+        resp.getWriter().write(html.toString());
         System.out.println(req.getServletPath());
     }
 
