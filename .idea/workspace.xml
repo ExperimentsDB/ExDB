@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HTML/TagA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HTML/TagNav.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FrontPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HTML/TagButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ExDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagDiv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagDiv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagNav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagNav.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

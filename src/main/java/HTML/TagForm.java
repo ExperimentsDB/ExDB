@@ -3,26 +3,30 @@ package HTML;
 import java.util.ArrayList;
 
 public class TagForm implements Tag {
-    private ArrayList<Tag> children;
+    private String content;
     private String openTag;
     private String closeTag;
-    public TagForm(String url, String get) {
-        openTag = "<form action=\"" + url + "\" method=\"" + get +"\">";
-        closeTag = "<input type=\"submit\" value=\"Submit\"></form>";
-        children = new ArrayList<>();
+    public TagForm(String attributes) {
+        openTag = "<form " + attributes + ">";
+        closeTag = "</form>";
+        content = "";
+    }
+    public TagForm(String attributes, String content) {
+        openTag = "<form " + attributes + ">";
+        closeTag = "</form>";
+        this.content = content;
+
     }
 
-    public void addChild(Tag tag) {
-        children.add(tag);
+    public void addContent(Tag tag) {
+        content+=tag.toString();
+    }
+    public void addContent(String newContent) {
+        content+=newContent;
     }
 
     @Override
     public String toString() {
-        StringBuilder out = new StringBuilder(openTag);
-        for(Tag child : children) {
-            out.append(child.toString());
-        }
-        out.append(closeTag);
-        return out.toString();
+        return openTag+content+closeTag;
     }
 }
