@@ -3,15 +3,20 @@ package HTML;
 public class TagA implements Tag {
     private String openTag;
     private String closeTag;
-    private String text;
-    public TagA(String text) {
+    private String content;
+    public TagA(String attributes, String content) {
+        openTag = "<a "+ attributes +">";
+        closeTag = "</a>";
+        this.content = content;
+    }
+    public TagA(String content) {
         openTag = "<a>";
         closeTag = "</a>";
-        this.text = text;
+        this.content = content;
     }
 
     @Override
     public String toString() {
-        return openTag + text + closeTag;
+        return openTag + content + closeTag;
     }
 }
