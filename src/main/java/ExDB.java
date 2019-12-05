@@ -14,9 +14,8 @@ import java.util.stream.Collectors;
 public class ExDB extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HTML html = new HTML();
-        html.addtoBody(new TagHeader());
-        resp.getWriter().write(html.toString());
+        FrontPage page = new FrontPage();
+        resp.getWriter().write(page.printPage());
         System.out.println(req.getServletPath());
     }
 

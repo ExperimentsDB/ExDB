@@ -1,0 +1,16 @@
+﻿link,Paper,Morphotype,Live/fixed?,Fixation method,Initial AF inoculum,A. fumigatus strain,Infection model,Strain ,Age,Treatment,Cell concentration,Route of infection ,Sample,Sample volume,Sample size,Analysis,Time
+https://iai.asm.org/content/69/3/1554.long,"Brieland et al., 2001",Conidia,Live,,6x10^6 CFUs,ATCC 201795,Murine,Crl:CF1,11 - 13g,,,inhalation chamber,Homogenate,10ml,5 mice,ELISA,pg/ml
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2258799/,"Bretz et al., 2008",Conidia,Live,,3.4x10^6 CFUs,Af293-GFP,Murine,c57BL/6,8-11 weeks,,,Inhalation chamber (90 s),Homogenate,2 ml,8-12 mice,ELISA,pg/ml
+https://onlinelibrary.wiley.com/doi/full/10.1111/j.1574-695X.2002.tb00549.x?sid=nlm%3Apubmed,"Centeno-Lima et al., 2006",Conidia,Live,,1x10^7,Clinical isolate,Murine,CD1,6-8 weeks,,,Intranasal ,Homogenate,─,5 mice,PCR,IL-12p40 Arbitrary units
+https://iai.asm.org/content/73/11/7198.long#sec-9,"Carpenter et al., 2005",Conidia,Live,,5x10^6,ATCC 13073,Murine,C57BL/6,6-8 weeks,100 ug RB6-8C5,,Intratracheal,Homogentate,50ul ,5 mice,ELISA,pg/ml
+https://www.atsjournals.org/doi/full/10.1164/rccm.200204-367OC?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed,"Mehrad et al., 2002",Conidia,Live,,2-3x10^6,ATCC 13073,Murine,,,RB6-8C5,,Intratracheal,Homogenate,─,5 mice,ELISA,pg/ml
+https://onlinelibrary.wiley.com/doi/full/10.1111/j.1574-695X.2002.tb00549.x?sid=nlm%3Apubmed,"Centeno-Lima et al., 2006",Conidia,Live,,1x10^7,Clinical isolate,Murine,CD1,6-8 weeks,Cortisone acetate,,Intranasal,Homogenate,─,5 mice,PCR,IL-12p40Arbitrary units
+https://iai.asm.org/content/69/3/1554.long,"Brieland et al., 2001",Conidia,Live,,6x10^6 CFUs,ATCC 201795,Murine,Crl:CF1,11 - 13g,,,inhalation chamber,BALF,1.6 ml,5 mice,ELISA,pg/ml
+https://iai.asm.org/content/73/9/5420.long#sec-1,"Balloy et al., 2005",Conidia,Live,,3x10^6,Clinical isolate,Murine,C57BL/6,7 weeks,Neutropenia by vinblastine (5mg/kg),,Intratracheal,BALF,4 ml,3 mice,ELISA,pg/ml
+https://www.ncbi.nlm.nih.gov/pubmed/16232209,"Shao et al., 2009",Conidia,Live,,1x10^7,Clinical strain ,Ex vivo,BALB/c,8-10 weeks,200 mg/kg cyclophosphamide,DCs - 10^6,,Supernatant,,,ELISA,pg/ml
+https://www.sciencedirect.com/science/article/pii/S115652331830026X?via%3Dihub#sec0045,"Khosravi et al., 2018",Conidia,Live,,3x10^4/mL,ATCC 204305,Mouse lung Ecs,TC-1 JHU-1,,,3x10^5 cells/ml,,Supernatant,100 ul,,ELISA,pg/ml
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1803127/,"Simitsopoulou et al., 2007",hyphae,Fixed,Sonication?,1x10^5,AF4215,Monocytes,THP-1,,,1x10^6,,supernatant,,,ELISA,pg/ml
+https://www.sciencedirect.com/science/article/pii/S0161589015300754,"Karnam et al., 2015",Unclear,Fixed,Paraformaldehyde,1.5x10^4?,MTCC 1811,Murine BMDMs,C3H/HeJ,,,1.5x10^3?,,Supernatant,,5-8 experiments ,ELISA,
+https://academic.oup.com/jid/article/197/6/924/921230#90059824,"Mezger et al., 2008",Germlings,Live,,1x10^6?,ATCC 9197,Primary human DCs,Mo-iDCs,,,1x10^6?,,Supernatant,,3 donors,ELISA,pg/ml
+https://iai.asm.org/content/74/3/1480.long#sec-12,"Gafa et al., 2006",Conidia,Fixed,Amphotericin B and Voriconazole,1x10^8/ml,CBS 144-89,Primary human PBMCs,Mo-DCs,,,0.5x10^6,,Supernatant,,4 experiments,Flow cytometer,
+https://academic.oup.com/jid/article/197/6/924/921230#90059824,"Mezger et al., 2008",Germlings,Live,,1x10^6?,ATCC 9197,Primary human DCs,Mo-iDCs,,,1x10^6?,,Supernatant,,3 donors,PCR,Ratio

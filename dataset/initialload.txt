@@ -1,0 +1,4 @@
+1.log in the database using heroku pg:psql -a experimentsdb on cmd
+2.load the data using \i 'path for the file exdbsql' that also created the tables required.
+3.create the json input files by: python timeinput.py from cmd at the right directory
+4.input the json values using \i jsonin.sql
