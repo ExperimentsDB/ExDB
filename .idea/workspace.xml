@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
-
+    <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="loading the data that we were given in the heroku postgress&#10;check the file dataset for instruction in the text file and the relevant files">
+      <change afterPath="$PROJECT_DIR$/src/main/Java/connectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
-      <change afterPath="$PROJECT_DIR$/src/main/java/FrontPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HTML/TagButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagDiv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagDiv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagNav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HTML/TagNav.java" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/ExDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FrontPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/FrontPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/HTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/HTML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagDiv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagDiv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagHead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTML/TagNav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/HTML/TagNav.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ExDB [appStart]">
+  <component name="RunManager" selected="Gradle.ExDB [build]">
     <configuration name="ExDB [appStart]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,8 +166,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ExDB [appStart]" />
         <item itemvalue="Gradle.ExDB [build]" />
+        <item itemvalue="Gradle.ExDB [appStart]" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +176,12 @@
       <serviceView>
         <option name="contentProportion" value="0.3004967" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@98ac5961" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -189,6 +202,7 @@
       <workItem from="1575149273796" duration="8543000" />
       <workItem from="1575209472389" duration="2902000" />
       <workItem from="1575540388864" duration="544000" />
+      <workItem from="1575543140794" duration="4252000" />
     </task>
     <task id="LOCAL-00001" summary="loading the data that we were given in the heroku postgress&#10;check the file dataset for instruction in the text file and the relevant files">
       <created>1575540596083</created>
