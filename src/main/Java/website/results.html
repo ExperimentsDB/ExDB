@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Experimental DB</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+      integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheets/common.css" />
+  </head>
+
+  <body>
+    <!-- Navbar code -->
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">ExDB</a>
+        <form class="form-inline btn-toolbar">
+          <div class="btn-toolbar">
+            <a
+              class="btn btn-success my-2 mx-2 my-sm-0"
+              href="/signin"
+              role="button"
+              >Sign in</a
+            >
+            <a
+              class="btn btn-success my-2 mx-2 my-sm-0"
+              href="/register"
+              role="button"
+              >Register</a
+            >
+          </div>
+        </form>
+      </nav>
+
+      <div class="container mx-0">
+        <div class="row mx-auto pt-5">
+          <div class="col-sm-7 col-md-5 col-lg-3 bg-light pt-5">
+            <div class="form-row pt-3">
+                <input class="form-control" type="search" placeholder="Search again!" aria-label="Search">
+            </div>
+            <div class="form-row justify-content-center align-items-center pt-3">     
+                <a class="btn btn-success" href="/results" role="button">Search</a>
+            </div>  
+                
+            <div class="form-row pt-3">
+              <label for="exampleFormControlSelect1"
+                >In vivo/In vitro</label
+              >
+              <select class="form-control" id="filter1">
+                <option selected> - </option>
+                <option>In vivo</option>
+                <option>In vitro</option>
+              </select>
+            </div>
+               
+            <div class="form-row pt-3">
+              <label for="exampleFormControlSelect2"
+                >Live/Fixed</label
+              >
+              <select class="form-control" id="filter2">
+                <option selected> - </option>
+                <option>Live</option>
+                <option>Fixed</option>
+              </select>
+            </div>    
+          </div>
+
+          <div class="col d-flex pl-4">
+            <div class="row pt-4">
+              <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Full title of the first research paper that is a result</h5>
+                <p class="card-text"><strong>[Authors and publication date]</strong></p>
+                <p class="card-text">More information on result 1</a>
+              </div>
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Or titles can be in short form</h5>
+                <p class="card-text"><strong>[Authors and publication date]</strong></p>
+                <p class="card-text">To allow for grid view of results in large screen</a>
+              </div>
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Placeholder result until this is connected to database</h5>
+                <p class="card-text"><strong>[Authors and publication date]</strong></p>
+                <p class="card-text">More information on result 3</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+           
+  </body>
+</html>

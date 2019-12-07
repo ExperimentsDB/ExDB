@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Experimental DB</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+      integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheets/common.css" />
+  </head>
+
+  <body>
+    <!-- Navbar code -->
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">ExDB</a>
+        <form class="form-inline btn-toolbar">
+          <div class="btn-toolbar">
+            <a
+              class="btn btn-success my-2 mx-2 my-sm-0"
+              href="/signin"
+              role="button"
+              >Sign in</a
+            >
+            <a
+              class="btn btn-success my-2 mx-2 my-sm-0"
+              href="/register"
+              role="button"
+              >Register</a
+            >
+          </div>
+        </form>
+      </nav>
+      
+    <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-8 col-lg-6 mx-auto">
+          <div class="card text-center d-flex my-auto">
+            <div class="card-body">
+              <!-- Card for search utility -->
+              <h2 class="card-title mb-3">Experimental database</h2>
+              <form action="">
+                <div class="form-row">
+                  <div class="form-group col px-auto mt-2 mb-3">
+                    <input class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
+                  </div>
+                  
+                  <div class="form-group mx-1 px-auto mt-2 mb-3">
+                    <a class="btn btn-success" href="/results" role="button">Search</a>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col px-auto">
+                    <label for="exampleFormControlSelect1"
+                      >In vivo/In vitro</label
+                    >
+                    <select class="form-control" id="filter1">
+                      <option selected> - </option>
+                      <option>In vivo</option>
+                      <option>In vitro</option>
+                    </select>
+                  </div>
+
+                  <div class="col px-auto">
+                    <label for="exampleFormControlSelect1">Live/Fixed</label>
+                    <select class="form-control" id="filter1">
+                      <option selected> - </option>
+                      <option>Live</option>
+                      <option>Fixed</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
