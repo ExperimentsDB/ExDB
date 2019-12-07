@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+#col1 {
+  margin-bottom: -9999px;
+  margin-top: 9999px;
+}
