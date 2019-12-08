@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -15,24 +15,24 @@
       integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="stylesheets/common.css" />
+    <link rel="stylesheet" href="/ExDB/style.css">
   </head>
 
-  <body>
+  <body class="h-100">
     <!-- Navbar code -->
-    <nav class="navbar fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">ExDB</a>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/ExDB/">ExDB</a>
         <form class="form-inline btn-toolbar">
           <div class="btn-toolbar">
             <a
               class="btn btn-success my-2 mx-2 my-sm-0"
-              href="/signin"
+              href="/ExDB/signin"
               role="button"
               >Sign in</a
             >
             <a
               class="btn btn-success my-2 mx-2 my-sm-0"
-              href="/register"
+              href="/ExDB/register"
               role="button"
               >Register</a
             >
@@ -47,23 +47,23 @@
             <div class="card-body">
               <!-- Card for search utility -->
               <h2 class="card-title mb-3">Experimental database</h2>
-              <form action="">
+              <form action="/ExDB/results" method="get">
                 <div class="form-row">
                   <div class="form-group col px-auto mt-2 mb-3">
-                    <input class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
+                    <input name="search" class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
                   </div>
                   
                   <div class="form-group mx-1 px-auto mt-2 mb-3">
-                    <a class="btn btn-success" href="/results" role="button">Search</a>
+                    <button class="btn btn-success" type="submit" role="button">Search</button>
                   </div>
                 </div>
 
                 <div class="form-row">
                   <div class="col px-auto">
-                    <label for="exampleFormControlSelect1"
-                      >In vivo/In vitro</label
+                    <label for="exampleFormControlSelect1">
+                      In vivo/In vitro</label
                     >
-                    <select class="form-control" id="filter1">
+                    <select class="form-control" id="exampleFormControlSelect1" name="filter1">
                       <option selected> - </option>
                       <option>In vivo</option>
                       <option>In vitro</option>
@@ -71,8 +71,8 @@
                   </div>
 
                   <div class="col px-auto">
-                    <label for="exampleFormControlSelect1">Live/Fixed</label>
-                    <select class="form-control" id="filter1">
+                    <label for="exampleFormControlSelect2">Live/Fixed</label>
+                    <select class="form-control" id="exampleFormControlSelect2" name="filter2">
                       <option selected> - </option>
                       <option>Live</option>
                       <option>Fixed</option>
