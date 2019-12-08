@@ -17,28 +17,26 @@ public class ExDB extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         System.out.println("GET: " + req.getServletPath());
 
-        FileToString website;
+        Websites websites = new Websites();
         switch (req.getServletPath()) {
             case "/style.css":
-                website = new FileToString("stylesheets/common.css");
-                resp.getWriter().write(website.print());
+                resp.getWriter().write(websites.get("stylesheets_common"));
                 break;
             case "/":
-                website = new FileToString("index.html");
-                resp.getWriter().write(website.print());
+                resp.getWriter().write(websites.get("index"));
                 break;
             case "/results":
-                website = new FileToString("results.html");
                 String search = req.getParameter("search");
                 String filter1 = req.getParameter("filter1");
                 String filter2 = req.getParameter("filter2");
 
-                ResultsList results = new ResultsList();
-                results.Search(search, filter1, filter2);
-
-
-                String page = website.print().replace("RESULTS", results.toString());
-                resp.getWriter().write(page);
+                resp.getWriter().write(websites.getSearch(search, filter1, filter2));
+                break;
+            case "/signin":
+                resp.getWriter().write(websites.get("signin"));
+                break;
+            case "/register":
+                resp.getWriter().write(websites.get("register"));
                 break;
         }
 

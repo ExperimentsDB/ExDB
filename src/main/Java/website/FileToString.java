@@ -25,7 +25,7 @@ public class FileToString {
         html = Bob.toString();
     }
 
-    public String print(){
+    public String toString(){
         return html;
     }
 }
