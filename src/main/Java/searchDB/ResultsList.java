@@ -18,6 +18,9 @@ public class ResultsList {
         */
         // Example result
         results.add(new ResultDB("My Title", "me", "https://example.com", "Hello World"));
+        results.add(new ResultDB(SearchBar, Filter1, "https://google.com", Filter2));
+
+
     }
 
     public String toString(){
