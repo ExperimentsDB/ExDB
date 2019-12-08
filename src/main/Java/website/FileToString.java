@@ -5,10 +5,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Html2string {
+public class FileToString {
     private String html;
 
-    public Html2string(String fileName){
+    public FileToString(String fileName){
         html = "";
         StringBuilder Bob = new StringBuilder();
         String path = new File("").getAbsolutePath();
