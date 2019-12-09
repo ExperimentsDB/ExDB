@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Java/website/Websites.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/website/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/ExDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/ExDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/ResultDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/ResultDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/ResultsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/ResultsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/FileToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/FileToString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/connectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/SearchDB.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +92,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dataset/alldata_notime_transpose_utf82.csv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -118,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ExDB [appStart]">
+  <component name="RunManager" selected="Gradle.ExDB [build]">
     <configuration name="ExDB [appStart]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -163,8 +156,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ExDB [appStart]" />
         <item itemvalue="Gradle.ExDB [build]" />
+        <item itemvalue="Gradle.ExDB [appStart]" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +193,7 @@
       <workItem from="1575209472389" duration="2902000" />
       <workItem from="1575540388864" duration="544000" />
       <workItem from="1575543140794" duration="4252000" />
+      <workItem from="1575854973862" duration="356000" />
     </task>
     <task id="LOCAL-00001" summary="loading the data that we were given in the heroku postgress&#10;check the file dataset for instruction in the text file and the relevant files">
       <created>1575540596083</created>
