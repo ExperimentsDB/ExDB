@@ -1,8 +1,7 @@
 package website;
 
-import searchDB.ResultsList;
+import paperToHTML.ResultsList;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Websites {
