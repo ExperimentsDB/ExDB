@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/Java/paperToHTML/ResultsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/paperToHTML/ResultsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/SearchDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/SearchDB.java" afterDir="false" />
-    </list>
+    <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +81,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
