@@ -17,7 +17,7 @@ def main():
 		times=get_data(file)
 		print(file)
 		
-		
+
 		
 		for paper in times.index.tolist():
 			f.write('UPDATE %s SET times = ' %(file[1:]))
@@ -26,7 +26,7 @@ def main():
 			for col in times.columns.tolist():
 					if isNaN(times[col][paper]):
 						if finds==1:
-							f.write("%s:%f"%(col,times[col][paper]))
+							f.write("%s:%s"%(col,str(times[col][paper])))
 							finds=finds+1
 						else:
 							f.write(",%s:%s"%(col,str(times[col][paper])))

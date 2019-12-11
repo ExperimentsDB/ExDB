@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Java/website/Websites.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/website/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Paperin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/ExDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/ExDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/ResultDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/ResultDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/ResultsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/ResultsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/FileToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/FileToString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/jsonin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/jsonin.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/timeinput.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/timeinput.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,13 +72,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="searchdb" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1U7A40o54IKJJuZFTJrV06wjqcU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
