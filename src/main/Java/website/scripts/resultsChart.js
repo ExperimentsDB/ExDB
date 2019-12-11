@@ -1,20 +1,22 @@
-let myChart = document.getElementById('resultsChart').getContext('2d');
+let myChart1 = document.getElementById('myChart1').getContext('2d');
 
 Chart.defaults.global.defaultFontFamily = 'Lato';
 Chart.defaults.global.defaultFontSize = 12;
 Chart.defaults.global.defaultFontColor = '#777';
 
 
-let massPopChart = new Chart(myChart, {
+let resultsunit1 = new Chart(myChart1, {
     type:'line', //bar, horizontalBar, line, doughnut, radar, polar Area
     data: {
-        labels:[ TIMELABELS ],
-        datasets:[ DATASETS ]
+        labels:['1h', '2h', '3h', '4h', '5h', '6h'],
+        datasets:[
+            DATASETS
+        ]
     },
     options:{
         title:{
             display: true,
-            text: 'Line Chart of Results',
+            text: 'Testing multiple lines',
             fontSize: 25
         },
         legend: {

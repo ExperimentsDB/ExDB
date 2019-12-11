@@ -25,7 +25,7 @@ public class ExDB extends HttpServlet {
                 resp.getWriter().write(websites.get("index"));
                 break;
             case "/script.js":
-                resp.getWriter().write(websites.get("scripts_resultsChart"));
+                resp.getWriter().write(websites.get("scripts_resultsChartTemplate"));
                 break;
             case "/results":
                 String search = req.getParameter("search");

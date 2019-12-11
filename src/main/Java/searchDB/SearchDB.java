@@ -13,14 +13,14 @@ public class SearchDB {
 
         ArrayList<Paper> results = new ArrayList<>();
 
-        String dbUrl = "jdbc:postgresql://localhost:5433/postgres";
+        String dbUrl = "jdbc:postgresql://localhost:5432/postgres";
         try {
             // Registers the driver
             Class.forName("org.postgresql.Driver");
         } catch (Exception e) {
         }
 
-        Connection conn= DriverManager.getConnection(dbUrl, "postgres", "Ig99pbmppa1!");
+        Connection conn= DriverManager.getConnection(dbUrl, "postgres", "D3cim@1.?");
 
         try {
             Statement s = conn.createStatement();
@@ -51,7 +51,7 @@ public class SearchDB {
                                 rset.getString(10),rset.getString(11),rset.getString(12),
                                 rset.getString(13),rset.getString(14),rset.getString(15),
                                 rset.getString(16),rset.getString(17),rset.getString(18),
-                                rset.getString(19),rset.getString(20),rset.getString(21)));
+                                rset.getString(21),rset.getString(20),rset.getString(19)));
                     }
                     break;
                 case "nphil":

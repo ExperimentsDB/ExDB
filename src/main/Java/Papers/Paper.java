@@ -5,6 +5,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public abstract class Paper {
@@ -26,7 +27,8 @@ public abstract class Paper {
     protected String sampleVolume;
     protected String sampleSize;
     protected String tUnits;
-    protected HashMap<String, String> times;
+    protected ArrayList<String> times;
+    protected HashMap<String, String> measurements;
 
 
     public Paper(int id, String link, String figure, String author,
@@ -54,11 +56,12 @@ public abstract class Paper {
         this.tUnits = tUnits;
         times = times.substring(1, times.length()-1);
         String[] keyValuePairs = times.split(",");
-        this.times = new HashMap<String, String>();
-
+        this.measurements = new HashMap<String, String>();
+        this.times = new ArrayList<>();
         for(String valuePair : keyValuePairs) {
             String[] entry = valuePair.split(":");
-            this.times.put(entry[0], entry[1]);
+            this.times.add(entry[0]);
+            this.measurements.put(entry[0], entry[1]);
         }
 
     }
@@ -135,8 +138,10 @@ public abstract class Paper {
         return tUnits;
     }
 
-    public HashMap<String, String> getTimes() {
-        return times;
+    public HashMap<String, String> getMeasurements() {
+        return measurements;
     }
+
+    public ArrayList<String> getTimes() {return times;}
 }
 
