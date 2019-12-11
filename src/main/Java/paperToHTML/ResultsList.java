@@ -9,9 +9,17 @@ public class ResultsList {
     private ArrayList<cardCreator> results;
 
     public ResultsList( ArrayList<Paper> results){
+<<<<<<< HEAD
         this.results = new ArrayList<>();
         for (Paper result : results){
             this.results.add(new cardCreator(result));
+=======
+        this.results=new ArrayList<>();
+
+        Iterator i = results.iterator();
+        while (i.hasNext()){
+            this.results.add(new cardCreator((Paper) i.next()));
+>>>>>>> cd64cd408f035fbf70ec9e5fae10fff91819df0f
         }
 
     }

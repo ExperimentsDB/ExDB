@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/Java/Papers/IL12.java" afterDir="false" />
@@ -43,6 +44,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/Java/website/Websites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/Websites.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/website/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/results.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+>>>>>>> cd64cd408f035fbf70ec9e5fae10fff91819df0f
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +143,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -258,7 +263,32 @@
       <option name="project" value="LOCAL" />
       <updated>1575768880270</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="3" />
+=======
+    <task id="LOCAL-00003" summary="papers and sql connection">
+      <created>1575855495641</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575855495641</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix search db">
+      <created>1576055801901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576055801901</updated>
+    </task>
+    <task id="LOCAL-00005" summary="conflict resolved?">
+      <created>1576057806128</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576057806128</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> cd64cd408f035fbf70ec9e5fae10fff91819df0f
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +311,13 @@
     <MESSAGE value="loading the data that we were given in the heroku postgress&#10;check the file dataset for instruction in the text file and the relevant files" />
     <MESSAGE value="fixes html styling&#10;fixes get post in servlet&#10;adds switch in servlet path" />
     <MESSAGE value="Creates template for search&#10;Returns an example search&#10;Fixes ExDB" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="Creates template for search&#10;Returns an example search&#10;Fixes ExDB" />
+=======
+    <MESSAGE value="papers and sql connection" />
+    <MESSAGE value="fix search db" />
+    <MESSAGE value="conflict resolved?" />
+    <option name="LAST_COMMIT_MESSAGE" value="conflict resolved?" />
+>>>>>>> cd64cd408f035fbf70ec9e5fae10fff91819df0f
   </component>
 </project>
