@@ -1,8 +1,11 @@
 package website;
 
-import searchDB.ResultsList;
+import paperToHTML.ResultsList;
+import searchDB.ChartMaker;
+import Papers.*;
+import searchDB.SearchDB;
 
-import java.util.ArrayList;
+import java.sql.SQLException;
 import java.util.HashMap;
 
 public class Websites {
@@ -74,9 +77,10 @@ public class Websites {
                 "                      In vivo/In vitro</label\n" +
                 "                    >\n" +
                 "                    <select class=\"form-control\" id=\"exampleFormControlSelect1\" name=\"filter1\">\n" +
-                "                      <option selected> - </option>\n" +
-                "                      <option>In vivo</option>\n" +
-                "                      <option>In vitro</option>\n" +
+                "                      <option selected>il8</option>\n" +
+                "                      <option>il12</option>\n" +
+                "                      <option>nphil</option>\n" +
+                "                      <option>tnfavivo</option>\n" +
                 "                    </select>\n" +
                 "                  </div>\n" +
                 "\n" +
@@ -107,17 +111,23 @@ public class Websites {
         websites.put("register", new FileToString("register.html").toString());
         websites.put("signin", new FileToString("signin.html").toString());
         websites.put("stylesheets_common", new FileToString("stylesheets/common.css").toString());
+        websites.put("scripts_resultsChart", new FileToString("scripts/resultsChart.js").toString());
     }
 
     public String get(String website){
         return websites.get(website);
     }
 
-    public String getSearch(String SearchBar, String Filter1, String Filter2){
-        ResultsList results = new ResultsList();
-        results.Search(SearchBar, Filter1, Filter2);
+    public String getSearch(String SearchBar, String Filter1, String Filter2) throws SQLException {
+        SearchDB search = new SearchDB();
+        ResultsList cardResults = new ResultsList(search.Searchdb("id=3;", "il8"));
+        ChartMaker chart = new ChartMaker(search.Searchdb("id=3;", "il8"));
+        String chartBuilder = "";
+        chartBuilder = websites.get("scripts_resultsChart").replace("TIMELABELS", chart.getLabels());
+        chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());
+        websites.put("scripts_resultsChart", chartBuilder);
 
-        String resultsBuilder = websites.get("results").replace("RESULTS", results.toString());
+        String resultsBuilder = websites.get("results").replace("RESULTS", cardResults.toString());
         return resultsBuilder;
     }
 }

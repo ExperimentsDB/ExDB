@@ -27,7 +27,7 @@ create table il8 (
     tUnits varchar(64),
 	times varchar(256)
 );
-\COPY il8(link,figure,author,morphotype,liveORfixed,fixationmethod,initialAFinoculum,Afumigatusstrain,infectionmodel,strain,age,treatment,infectionroute,sample,sampleVolume,sampleSize,tUnits) FROM 'C:/Users/nestoras/Documents/year3hd/prg3/project/dataset/csvfiles/il8data.csv' DELIMITER ',' CSV Header
+\COPY il8(link,figure,author,morphotype,liveORfixed,fixationmethod,initialAFinoculum,Afumigatusstrain,infectionmodel,strain,age,treatment,infectionroute,sample,sampleVolume,sampleSize,tUnits) FROM 'C:/Users/Andreas/Desktop/Year3/prg3/ExDB/dataset/csvfiles/il8data.csv' DELIMITER ',' CSV Header
 		
 		
 		
@@ -54,7 +54,7 @@ create table il12 (
     tUnits varchar(64),
 	times varchar(256)
 );
-\COPY il12(link,author,morphotype,liveORfixed,fixationmethod,initialAFinoculum,Afumigatusstrain,infectionmodel,strain,age,treatment,cellconcentration,infectionroute,sample,sampleVolume,sampleSize,analysis,tUnits) FROM 'C:/Users/nestoras/Documents/year3hd/prg3/project/dataset/csvfiles/il12data.csv' DELIMITER ',' CSV Header
+\COPY il12(link,author,morphotype,liveORfixed,fixationmethod,initialAFinoculum,Afumigatusstrain,infectionmodel,strain,age,treatment,cellconcentration,infectionroute,sample,sampleVolume,sampleSize,analysis,tUnits) FROM 'C:/Users/Andreas/Desktop/Year3/prg3/ExDB/dataset/csvfiles/il12data.csv' DELIMITER ',' CSV Header
 		
 		
 		
@@ -81,7 +81,7 @@ create table nphil (
     tUnits varchar(64),
 	times varchar(256)
 );
-\COPY nphil(link,figure,author,morphotype,liveORfixed,fixationmethod,initialAFinoculum,Afumigatusstrain,infectionmodel,strain,age,treatment,cellconcentration,infectionroute,sample,sampleVolume,sampleSize,analysis,tUnits) FROM 'C:/Users/nestoras/Documents/year3hd/prg3/project/dataset/csvfiles/nphildata.csv' DELIMITER ',' CSV Header
+\COPY nphil(link,figure,author,morphotype,liveORfixed,fixationmethod,initialAFinoculum,Afumigatusstrain,infectionmodel,strain,age,treatment,cellconcentration,infectionroute,sample,sampleVolume,sampleSize,analysis,tUnits) FROM 'C:/Users/Andreas/Desktop/Year3/prg3/ExDB/dataset/csvfiles/nphildata.csv' DELIMITER ',' CSV Header
 		
 		
 		
@@ -106,7 +106,7 @@ create table tnfavivo (
     tUnits varchar(64),
 	times varchar(256)
 );
-\COPY tnfavivo(link,figure,author,morphotype,liveORfixed,fixationmethod,initialAFinoculum,Afumigatusstrain,infectionmodel,strain,age,treatment,infectionroute,sample,sampleVolume,sampleSize,tUnits) FROM 'C:/Users/nestoras/Documents/year3hd/prg3/project/dataset/csvfiles/tnfavivodata.csv' DELIMITER ',' CSV Header
+\COPY tnfavivo(link,figure,author,morphotype,liveORfixed,fixationmethod,initialAFinoculum,Afumigatusstrain,infectionmodel,strain,age,treatment,infectionroute,sample,sampleVolume,sampleSize,tUnits) FROM 'C:/Users/Andreas/Desktop/Year3/prg3/ExDB/dataset/csvfiles/tnfavivodata.csv' DELIMITER ',' CSV Header
 		
 		
 		

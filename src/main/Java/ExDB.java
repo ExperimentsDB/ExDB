@@ -4,9 +4,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import java.util.ArrayList;
+import java.sql.SQLException;
 
-import searchDB.ResultsList;
 import website.*;
 
 
@@ -25,12 +24,19 @@ public class ExDB extends HttpServlet {
             case "/":
                 resp.getWriter().write(websites.get("index"));
                 break;
+            case "/script.js":
+                resp.getWriter().write(websites.get("scripts_resultsChart"));
+                break;
             case "/results":
                 String search = req.getParameter("search");
                 String filter1 = req.getParameter("filter1");
                 String filter2 = req.getParameter("filter2");
 
-                resp.getWriter().write(websites.getSearch(search, filter1, filter2));
+                try {
+                    resp.getWriter().write(websites.getSearch(search, filter1, filter2));
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
                 break;
             case "/signin":
                 resp.getWriter().write(websites.get("signin"));

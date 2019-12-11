@@ -26,8 +26,8 @@ def main():
 			for col in times.columns.tolist():
 					if isNaN(times[col][paper]):
 						if finds==1:
-							f.write("%s:%f"%(col,times[col][paper]))
-							finds=finds+1
+							f.write("%s:%s"%(col,str(times[col][paper])))
+							finds = 2
 						else:
 							f.write(",%s:%s"%(col,str(times[col][paper])))
 			f.write(r"}' WHERE id=%d; " %(paper+1))
