@@ -9,6 +9,7 @@ public class ResultsList {
     private ArrayList<cardCreator> results;
 
     public ResultsList( ArrayList<Paper> results){
+        this.results=new ArrayList<>();
 
         Iterator i = results.iterator();
         while (i.hasNext()){

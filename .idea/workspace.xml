@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Java/searchDB/SearchDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/SearchDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/ChartMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/ChartMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/Websites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/Websites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/paperToHTML/ResultsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/paperToHTML/ResultsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/SearchDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/SearchDB.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575855495641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix search db">
+      <created>1576055801901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576055801901</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +246,7 @@
     <MESSAGE value="fixes html styling&#10;fixes get post in servlet&#10;adds switch in servlet path" />
     <MESSAGE value="Creates template for search&#10;Returns an example search&#10;Fixes ExDB" />
     <MESSAGE value="papers and sql connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="papers and sql connection" />
+    <MESSAGE value="fix search db" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix search db" />
   </component>
 </project>
