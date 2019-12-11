@@ -1,0 +1,16 @@
+{
+                label:'Result',
+                data:[
+                    DATASET
+                ],
+                borderColor:[
+                    'rgba(54, 209, 99, 0.6)'
+                ],
+                borderWidth:1,
+                borderPointColor:'#777',
+                hoverBorderWidth:2,
+                pointHoverBorderColor:'#444',
+                spanGaps:true,
+                lineTension: 0,
+                fill: false
+            },

@@ -122,7 +122,7 @@ public abstract class Paper {
         return sampleSize;
     }
 
-    public String gettUnits() {
+    public String getUnits() {
         return tUnits;
     }
 
