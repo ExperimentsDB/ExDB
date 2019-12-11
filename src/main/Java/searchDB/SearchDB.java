@@ -9,7 +9,7 @@ public class SearchDB {
 
     public static ArrayList<Paper> Searchdb(String sqlInput,String table) throws SQLException {
 
-        public ArrayList<Paper> results = new ArrayList<>();
+        ArrayList<Paper> results = new ArrayList<>();
 
         String dbUrl = "jdbc:postgresql://localhost:5432/postgres";
         try {

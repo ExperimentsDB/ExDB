@@ -26,8 +26,6 @@ public class Websites {
     }
 
     public String getSearch(String SearchBar, String Filter1, String Filter2) throws SQLException {
-        //TODO: Maybe make class of SearchDB and perform the search?
-
         ResultsList cardResults = new ResultsList(SearchDB.Searchdb(SearchBar, Filter1));
         ChartMaker chart = new ChartMaker(SearchDB.Searchdb(SearchBar, Filter1));
         websites.get("scripts_resultsChart").replace("TIMELABELS", chart.getLabels());

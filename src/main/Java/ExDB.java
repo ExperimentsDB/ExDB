@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.sql.SQLException;
 
 import website.*;
 
@@ -28,7 +29,11 @@ public class ExDB extends HttpServlet {
                 String filter1 = req.getParameter("filter1");
                 String filter2 = req.getParameter("filter2");
 
-                resp.getWriter().write(websites.getSearch(search, filter1, filter2));
+                try {
+                    resp.getWriter().write(websites.getSearch(search, filter1, filter2));
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
                 break;
             case "/signin":
                 resp.getWriter().write(websites.get("signin"));
