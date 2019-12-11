@@ -38,6 +38,9 @@ public class ExDB extends HttpServlet {
             case "/register":
                 resp.getWriter().write(websites.get("register"));
                 break;
+            default:
+                resp.getWriter().write("404");
+
         }
 
     }
