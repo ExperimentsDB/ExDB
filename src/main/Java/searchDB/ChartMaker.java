@@ -24,8 +24,8 @@ public class ChartMaker {
         TimeAxis timeAxis = new TimeAxis();
 
         for (Paper paper : papers) {
-            PaperGetTimes temp = new PaperGetTimes(paper.getTimes());
-            timeAxis.addTimes(temp.getItsTimePoints());
+            //PaperGetTimes temp = new PaperGetTimes(paper.getTimes());
+            timeAxis.addTimes(paper.getTimes());
         }
         labels = timeAxis.getAxis();
 
@@ -33,7 +33,7 @@ public class ChartMaker {
         DatasetList list = new DatasetList();
         for (Paper paper : papers) {
             DatasetTemplate tempLine = new DatasetTemplate();
-            list.toList(tempLine.toDatasetString(paper.getTimes(), timeAxis.getAllTimePoints()));
+            list.toList(tempLine.toDatasetString(paper.getMeasurements(), paper.getTimes()));
         }
         list.datasetsMaker();
         datasets = list.datasetsMaker();

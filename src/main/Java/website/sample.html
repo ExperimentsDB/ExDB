@@ -92,7 +92,22 @@
 
         <div class="col-sm-12 col-md-6 col-lg-6">
 
-            RESULTS
+            <div class="card w-100 mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Research Paper Result 2</h5>
+                    <p class="card-text"><strong>[Authors and publication date]</strong></p>
+                    <p class="card-text">Link to paper and more information</a>
+                </div>
+            </div>
+
+
+            <div class="card w-100 mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Research Paper Result 2</h5>
+                    <p class="card-text"><strong>[Authors and publication date]</strong></p>
+                    <p class="card-text">Link to paper and more information</a>
+                </div>
+            </div>
 
         </div>
 
@@ -100,6 +115,87 @@
 
 </div>
 
-<script>SCRIPT</script>
+<script>let myChart1 = document.getElementById('myChart1').getContext('2d');
+
+Chart.defaults.global.defaultFontFamily = 'Lato';
+Chart.defaults.global.defaultFontSize = 12;
+Chart.defaults.global.defaultFontColor = '#777';
+
+
+let resultsunit1 = new Chart(myChart1, {
+    type:'line', //bar, horizontalBar, line, doughnut, radar, polar Area
+    data: {
+        labels:['1h', '2h', '3h', '4h', '5h', '6h'],
+        datasets:[{
+            label:'Experiment 1',
+            data:[
+                54,
+                ,
+                ,
+                36,
+                29,
+
+            ],
+            //backgroundColor = 'green'
+            borderColor:[
+                'rgba(255, 99, 50, 0.6)'
+            ],
+            borderWidth:1,
+            borderPointColor:'#777',
+            hoverBorderWidth:2,
+            pointHoverBorderColor:'#444',
+            spanGaps:true,
+            lineTension: 0,
+            fill: false
+        },
+            {
+                label:'Experiment 2',
+                data:[
+                    22,
+                    ,
+                    88,
+                    ,
+                    ,
+                    56
+                ],
+                borderColor:[
+                    'rgba(54, 209, 99, 0.6)'
+                ],
+                borderWidth:1,
+                borderPointColor:'#777',
+                hoverBorderWidth:2,
+                pointHoverBorderColor:'#444',
+                spanGaps:true,
+                lineTension: 0,
+                fill: false
+            }
+        ]
+    },
+    options:{
+        title:{
+            display: true,
+            text: 'Testing multiple lines',
+            fontSize: 25
+        },
+        legend: {
+            display:false,
+            position:'right',
+            labels: {
+                fontColor:'#000'
+            }
+        },
+        layout:{
+            padding:{
+                left:0,
+                right:0,
+                bottom:0,
+                top:0
+            }
+        },
+        tooltips:{
+            enabled:true
+        }
+    }
+});</script>
 </body>
 </html>

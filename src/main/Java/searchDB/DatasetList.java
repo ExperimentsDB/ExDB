@@ -20,9 +20,9 @@ public class DatasetList {
         Iterator i = allDatasets.iterator();
         String datasets = "";
         while (i.hasNext()) {
-            datasets = datasets + i.next();
+            datasets = datasets + i.next() + ",";
         }
-        datasets = datasets.substring(0, datasets.length()-2);
+        datasets = datasets.substring(0, datasets.length()-1);
 
         return datasets;
     }

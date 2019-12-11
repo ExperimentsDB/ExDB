@@ -13,4 +13,4 @@
                 spanGaps:true,
                 lineTension: 0,
                 fill: false
-            },
+            }
