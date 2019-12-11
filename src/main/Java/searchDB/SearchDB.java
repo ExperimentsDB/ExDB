@@ -1,3 +1,4 @@
+package searchDB;
 
 import Papers.*;
 
@@ -8,7 +9,7 @@ public class SearchDB {
 
     public static ArrayList<Paper> Searchdb(String sqlInput,String table) throws SQLException {
 
-        ArrayList<Paper> results = null;
+        public ArrayList<Paper> results = new ArrayList<>();
 
         String dbUrl = "jdbc:postgresql://localhost:5432/postgres";
         try {

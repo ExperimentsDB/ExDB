@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="Merge branch 'searchdb' of https://github.com/ExperimentsDB/ExDB into searchdb&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+    <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/Java/searchDB/SearchDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/SearchDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/SearchDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/paperToHTML/cardCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/paperToHTML/cardCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/SearchDB.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/ChartMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/ChartMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/DatasetList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/DatasetList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/PaperGetTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/PaperGetTimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/searchDB/TimeAxis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/searchDB/TimeAxis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/website/Websites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/Websites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/website/scripts/resultsChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/website/scripts/resultsChart.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

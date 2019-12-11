@@ -6,7 +6,7 @@
 
 package searchDB;
 
-import Papers.Paper;
+import Papers.*;
 
 import java.sql.Time;
 import java.util.ArrayList;
