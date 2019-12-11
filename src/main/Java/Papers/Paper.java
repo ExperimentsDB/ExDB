@@ -5,6 +5,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public abstract class Paper {
     protected int id;
     protected String link;
@@ -24,7 +27,7 @@ public abstract class Paper {
     protected String sampleVolume;
     protected String sampleSize;
     protected String tUnits;
-    protected JSONObject times;
+    protected HashMap<String,String> times;
 
     public Paper(int id, String link, String figure, String author,
                  String morphotype, String liveORfixed, String fixationmethod,
@@ -49,9 +52,19 @@ public abstract class Paper {
         this.sampleVolume = sampleVolume;
         this.sampleSize = sampleSize;
         this.tUnits = tUnits;
-        JSONParser parser = new JSONParser();
-        JSONObject jsonT = (JSONObject) parser.parse(times);
-        this.times=jsonT;
+        //'{0:125.0,24:1125.0,48:500.0,72:625.0}'
+        String value = "{first_name = naresh,last_name = kumar,gender = male}";
+        value = value.substring(1, value.length()-1);           //remove curly brackets
+        String[] keyValuePairs = value.split(",");              //split the string to creat key-value pairs
+        HashMap<String,String> map = new HashMap<>();
+
+        for(String pair : keyValuePairs)                        //iterate over the pairs
+        {
+            String[] entry = pair.split(":");                   //split the pairs to get key and value
+            map.put(entry[0], entry[1]);          //add them to the hashmap and trim whitespaces
+        }
+        this.times=map;
+
     }
 
     public int getId() {
