@@ -6,10 +6,10 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FileToString {
-    private String html;
+    private String pageContent;
 
     public FileToString(String fileName){
-        html = "";
+        pageContent = "";
         StringBuilder Bob = new StringBuilder();
         String path = new File("").getAbsolutePath();
 
@@ -22,10 +22,10 @@ public class FileToString {
             in.close();
         } catch (IOException e) {
         }
-        html = Bob.toString();
+        pageContent = Bob.toString();
     }
 
     public String toString(){
-        return html;
+        return pageContent;
     }
 }

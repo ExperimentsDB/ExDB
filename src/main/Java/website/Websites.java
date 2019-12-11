@@ -1,8 +1,11 @@
 package website;
 
-import searchDB.ResultsList;
+import paperToHTML.ResultsList;
+import searchDB.ChartMaker;
+import Papers.*;
+import searchDB.SearchDB;
 
-import java.util.ArrayList;
+import java.sql.SQLException;
 import java.util.HashMap;
 
 public class Websites {
@@ -107,17 +110,22 @@ public class Websites {
         websites.put("register", new FileToString("register.html").toString());
         websites.put("signin", new FileToString("signin.html").toString());
         websites.put("stylesheets_common", new FileToString("stylesheets/common.css").toString());
+        websites.put("scripts_resultsChart", new FileToString("scripts/resultsChart.js").toString());
     }
 
     public String get(String website){
         return websites.get(website);
     }
 
-    public String getSearch(String SearchBar, String Filter1, String Filter2){
-        ResultsList results = new ResultsList();
-        results.Search(SearchBar, Filter1, Filter2);
+    public String getSearch(String SearchBar, String Filter1, String Filter2) throws SQLException {
+        //TODO: Maybe make class of SearchDB and perform the search?
 
-        String resultsBuilder = websites.get("results").replace("RESULTS", results.toString());
+        ResultsList cardResults = new ResultsList(SearchDB.Searchdb(SearchBar, Filter1));
+        ChartMaker chart = new ChartMaker(SearchDB.Searchdb(SearchBar, Filter1));
+        websites.get("scripts_resultsChart").replace("TIMELABELS", chart.getLabels());
+        websites.get("scripts_resultsChart").replace("DATASETS", chart.getDatasets());
+
+        String resultsBuilder = websites.get("results").replace("RESULTS", cardResults.toString());
         return resultsBuilder;
     }
 }

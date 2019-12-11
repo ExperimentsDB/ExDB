@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d18c0c-5ed8-400b-a2de-b821703b6756" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/ExDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/ExDB.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,28 +76,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="searchdb" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1U7A40o54IKJJuZFTJrV06wjqcU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dataset/alldata_notime_transpose_utf82.csv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -153,8 +159,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ExDB [build]" />
-        <item itemvalue="Gradle.ExDB [appStart]" />
         <item itemvalue="Gradle.ExDB [appStart]" />
         <item itemvalue="Gradle.ExDB [build]" />
       </list>
@@ -192,6 +196,11 @@
       <workItem from="1575209472389" duration="2902000" />
       <workItem from="1575540388864" duration="544000" />
       <workItem from="1575543140794" duration="4252000" />
+      <workItem from="1575929336481" duration="35860000" />
+      <workItem from="1575854973862" duration="554000" />
+      <workItem from="1575907369861" duration="2316000" />
+      <workItem from="1575993440133" duration="4380000" />
+      <workItem from="1576054029215" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="loading the data that we were given in the heroku postgress&#10;check the file dataset for instruction in the text file and the relevant files">
       <created>1575540596083</created>
@@ -207,7 +216,28 @@
       <option name="project" value="LOCAL" />
       <updated>1575768880270</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="papers and sql connection">
+      <created>1575855495641</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575855495641</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix search db">
+      <created>1576055801901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576055801901</updated>
+    </task>
+    <task id="LOCAL-00005" summary="conflict resolved?">
+      <created>1576057806128</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576057806128</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +260,9 @@
     <MESSAGE value="loading the data that we were given in the heroku postgress&#10;check the file dataset for instruction in the text file and the relevant files" />
     <MESSAGE value="fixes html styling&#10;fixes get post in servlet&#10;adds switch in servlet path" />
     <MESSAGE value="Creates template for search&#10;Returns an example search&#10;Fixes ExDB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creates template for search&#10;Returns an example search&#10;Fixes ExDB" />
+    <MESSAGE value="papers and sql connection" />
+    <MESSAGE value="fix search db" />
+    <MESSAGE value="conflict resolved?" />
+    <option name="LAST_COMMIT_MESSAGE" value="conflict resolved?" />
   </component>
 </project>
