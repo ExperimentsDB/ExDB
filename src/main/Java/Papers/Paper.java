@@ -139,7 +139,7 @@ public abstract class Paper {
         return tUnits;
     }
 
-    public JSONObject getTimes() {
+    public HashMap<String, String> getTimes() {
         return times;
     }
 }
