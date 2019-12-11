@@ -12,7 +12,7 @@ public class DatasetTemplate {
         dataset = "";
     }
 
-    public String toDatasetString(JSONObject findings, ArrayList<String> sortedTimes) {
+    public String toDatasetString(HashMap<String,String> findings, ArrayList<String> sortedTimes) {
         Iterator i = sortedTimes.iterator();
         while(i.hasNext()) {
             if (findings.containsKey(i.next())) {

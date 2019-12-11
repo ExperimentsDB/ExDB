@@ -122,6 +122,7 @@ public class Websites {
         SearchDB search = new SearchDB();
         ResultsList cardResults = new ResultsList(search.Searchdb("id=3;", "il8"));
         ChartMaker chart = new ChartMaker(search.Searchdb("id=3;", "il8"));
+
         String chartBuilder = "";
         chartBuilder = websites.get("scripts_resultsChart").replace("TIMELABELS", chart.getLabels());
         chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());

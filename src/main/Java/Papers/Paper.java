@@ -5,6 +5,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.util.HashMap;
+
 public abstract class Paper {
     protected int id;
     protected String link;
@@ -24,7 +26,8 @@ public abstract class Paper {
     protected String sampleVolume;
     protected String sampleSize;
     protected String tUnits;
-    protected JSONObject times;
+    protected HashMap<String, String> times;
+
 
     public Paper(int id, String link, String figure, String author,
                  String morphotype, String liveORfixed, String fixationmethod,
@@ -49,9 +52,15 @@ public abstract class Paper {
         this.sampleVolume = sampleVolume;
         this.sampleSize = sampleSize;
         this.tUnits = tUnits;
-        JSONParser parser = new JSONParser();
-        JSONObject jsonT = (JSONObject) parser.parse(times);
-        this.times=jsonT;
+        times = times.substring(1, times.length()-1);
+        String[] keyValuePairs = times.split(",");
+        this.times = new HashMap<String, String>();
+
+        for(String valuePair : keyValuePairs) {
+            String[] entry = valuePair.split(":");
+            this.times.put(entry[0], entry[1]);
+        }
+
     }
 
     public int getId() {
@@ -126,7 +135,7 @@ public abstract class Paper {
         return tUnits;
     }
 
-    public JSONObject getTimes() {
+    public HashMap<String, String> getTimes() {
         return times;
     }
 }
