@@ -20,7 +20,7 @@ public class SearchDB {
         } catch (Exception e) {
         }
 
-        Connection conn= DriverManager.getConnection(dbUrl, "postgres", "D3cim@1.?");
+        Connection conn= DriverManager.getConnection(dbUrl, "postgres", "");
 
         try {
             Statement s = conn.createStatement();
