@@ -21,7 +21,7 @@ public class TimeAxis {
         timeSet.addAll(tempSet);
     }
 
-    public ArrayList<String> getAllTimes() {
+    public ArrayList<String> getAllTimePoints() {
         return timeSet;
     }
 

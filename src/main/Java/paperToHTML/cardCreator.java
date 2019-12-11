@@ -10,7 +10,7 @@ public class cardCreator {
     private String link;
 
 
-    public cardCreator( Paper paperin) {
+    public cardCreator(Paper paperin) {
 
         this.author = paperin.getAuthor();
         this.link = paperin.getLink();

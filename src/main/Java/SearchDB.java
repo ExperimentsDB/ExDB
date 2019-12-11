@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class SearchDB {
 
-    static ArrayList<Paper> Searchdb(String sqlInput,String table) throws SQLException {
+    public static ArrayList<Paper> Searchdb(String sqlInput,String table) throws SQLException {
 
         ArrayList<Paper> results = null;
 
