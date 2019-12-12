@@ -20,7 +20,7 @@ public class SearchDB {
         } catch (Exception e) {
         }
 
-        Connection conn= DriverManager.getConnection(dbUrl, "postgres", "");
+        Connection conn= DriverManager.getConnection(dbUrl, "postgres", "nestoras");
 
         try {
             Statement s = conn.createStatement();
@@ -49,9 +49,9 @@ public class SearchDB {
                                 rset.getString(4),rset.getString(5),rset.getString(6),
                                 rset.getString(7),rset.getString(8),rset.getString(9),
                                 rset.getString(10),rset.getString(11),rset.getString(12),
-                                rset.getString(13),rset.getString(14),rset.getString(15),
-                                rset.getString(16),rset.getString(17),rset.getString(18),
-                                rset.getString(21),rset.getString(20),rset.getString(19)));
+                                rset.getString(13),rset.getString(15),rset.getString(16),
+                                rset.getString(17),rset.getString(18),rset.getString(20),
+                                rset.getString(21),rset.getString(14),rset.getString(19)));
                     }
                     break;
                 case "nphil":
@@ -61,9 +61,9 @@ public class SearchDB {
                                 rset.getString(4),rset.getString(5),rset.getString(6),
                                 rset.getString(7),rset.getString(8),rset.getString(9),
                                 rset.getString(10),rset.getString(11),rset.getString(12),
-                                rset.getString(13),rset.getString(14),rset.getString(15),
-                                rset.getString(16),rset.getString(17),rset.getString(18),
-                                rset.getString(19),rset.getString(20),rset.getString(21)));
+                                rset.getString(13),rset.getString(15),rset.getString(16),
+                                rset.getString(17),rset.getString(18),rset.getString(20),
+                                rset.getString(21),rset.getString(14),rset.getString(19)));
                     }
                     break;
                 case "tnfavivo":
