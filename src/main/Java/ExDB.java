@@ -17,6 +17,7 @@ public class ExDB extends HttpServlet {
         System.out.println("GET: " + req.getServletPath());
 
         Websites websites = new Websites();
+        // Changing URLs
         switch (req.getServletPath()) {
             case "/style.css":
                 resp.getWriter().write(websites.get("stylesheets_common"));
