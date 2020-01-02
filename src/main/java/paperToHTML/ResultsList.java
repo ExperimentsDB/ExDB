@@ -3,36 +3,22 @@ package paperToHTML;
 import Papers.*;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
+// Class for storing all result cards
 public class ResultsList {
     private ArrayList<cardCreator> results;
 
     public ResultsList( ArrayList<Paper> results){
-
+        // Iterates through the list of papers and creates and stores a card for each result
         this.results = new ArrayList<>();
         for (Paper result : results){
             this.results.add(new cardCreator(result));
         }
-
     }
-      /*
-    public void Search(String SearchBar, String Filter1, String Filter2){
-        // TODO code to return result from database
-        // TODO for (result: resultsFromDB){
-               ResultDB temp = new ResultDB(String title, String author, String link, String text);
-               results.add(temp);
-               }
 
-        // Example result
-        results.add(new cardCreator("My Title", "me", "https://example.com", "Hello World"));
-        results.add(new cardCreator(SearchBar, Filter1, "https://google.com", Filter2));
-
-
-    }
-    */
-
+    // Function to access results
     public String toString(){
+        // Creates a string of HTML of the results
         StringBuilder resultsToString = new StringBuilder();
         for (cardCreator result : results){
             resultsToString.append(result.toString());

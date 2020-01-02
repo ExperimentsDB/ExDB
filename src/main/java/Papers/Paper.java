@@ -1,13 +1,10 @@
 package Papers;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
+// Abstract class for storing parameters from database
 public abstract class Paper {
     protected int id;
     protected String link;
@@ -56,7 +53,7 @@ public abstract class Paper {
         this.tUnits = tUnits;
         times = times.substring(1, times.length()-1);
         String[] keyValuePairs = times.split(",");
-        this.measurements = new HashMap<String, String>();
+        this.measurements = new HashMap<>();
         this.times = new ArrayList<>();
         for(String valuePair : keyValuePairs) {
             String[] entry = valuePair.split(":");
@@ -66,6 +63,7 @@ public abstract class Paper {
 
     }
 
+    // Access functions for parameters
     public int getId() {
         return id;
     }

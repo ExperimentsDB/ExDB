@@ -1,8 +1,5 @@
 package searchDB;
 
-import org.json.simple.JSONObject;
-import website.FileToString;
-
 import java.util.*;
 
 public class DatasetTemplate {
@@ -13,15 +10,6 @@ public class DatasetTemplate {
     }
 
     public String toDatasetString(HashMap<String,String> findings, ArrayList<String> sortedTimes) {
-//        Iterator i = sortedTimes.iterator();
-//        while(i.hasNext()) {
-//            if (findings.containsKey(i.next())) {
-//                dataset = dataset + findings.get(i.next()) + ", ";
-//            }
-//            else if (!findings.containsKey(i.next())) {
-//                dataset = dataset + ", ";
-//            }
-//        }
         StringBuilder datasetBuilder = new StringBuilder();
         for (String time : sortedTimes){
             if (findings.containsKey(time)){
@@ -36,7 +24,6 @@ public class DatasetTemplate {
         dataset = datasetBuilder.toString();
         dataset = dataset.substring(0, dataset.length()-1);
 
-        //String templateDataset = new FileToString("scripts/datasetJS.txt").toString();
         String templateDataset = "{\n" +
                 "            label:'Experiment 1',\n" +
                 "            data:[\n" +

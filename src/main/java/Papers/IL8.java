@@ -1,8 +1,8 @@
 package Papers;
 
-import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
+// IL8 table papers
 public class IL8 extends Paper {
 
     public IL8(int id, String link, String figure,

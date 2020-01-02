@@ -1,8 +1,8 @@
 package Papers;
 
-import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
+// IL12 table papers
 public class IL12 extends Paper {
     private String cellconcentration;
     private String analysis;
