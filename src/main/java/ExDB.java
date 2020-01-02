@@ -33,11 +33,7 @@ public class ExDB extends HttpServlet {
                 String filter1 = req.getParameter("filter1");
                 String filter2 = req.getParameter("filter2");
 
-                try {
-                    resp.getWriter().write(websites.getSearch(search, filter1, filter2));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+                resp.getWriter().write(websites.getSearch(search, filter1, filter2));
                 break;
             case "/signin":
                 resp.getWriter().write(websites.get("signin"));
