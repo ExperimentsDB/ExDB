@@ -5,6 +5,7 @@ import searchDB.ChartMaker;
 import Papers.*;
 import searchDB.SearchDB;
 
+import java.net.URISyntaxException;
 import java.sql.SQLException;
 import java.util.HashMap;
 
@@ -564,19 +565,25 @@ public class Websites {
         return websites.get(website);
     }
 
-    public String getSearch(String SearchBar, String Filter1, String Filter2) throws SQLException {
-        SearchDB search = new SearchDB();
-        ResultsList cardResults = new ResultsList(search.Searchdb(SearchBar, Filter1));
-        ChartMaker chart = new ChartMaker(search.Searchdb(SearchBar, Filter1));
+    public String getSearch(String SearchBar, String Filter1, String Filter2) {
+        try {
+            SearchDB search = new SearchDB();
+            ResultsList cardResults = new ResultsList(search.Searchdb(SearchBar, Filter1));
+            ChartMaker chart = new ChartMaker(search.Searchdb(SearchBar, Filter1));
 
-        String chartBuilder = "";
-        chartBuilder = websites.get("scripts_resultsChartTemplate").replace("TIMELABELS", chart.getLabels());
-        chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());
-        websites.put("scripts_resultsChart", chartBuilder);
+            String chartBuilder = "";
+            chartBuilder = websites.get("scripts_resultsChartTemplate").replace("TIMELABELS", chart.getLabels());
+            chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());
+            websites.put("scripts_resultsChart", chartBuilder);
 
-        String resultsBuilder = websites.get("results").replace("RESULTS", cardResults.toString());
-        resultsBuilder = resultsBuilder.replace("SCRIPT", chartBuilder);
-        System.out.println(resultsBuilder);
-        return resultsBuilder;
+            String resultsBuilder = websites.get("results").replace("RESULTS", cardResults.toString());
+            resultsBuilder = resultsBuilder.replace("SCRIPT", chartBuilder);
+            System.out.println(resultsBuilder);
+            search.closeConn();
+            return resultsBuilder;
+        } catch (SQLException | URISyntaxException e) {
+            System.out.println(e);
+            return "502 Server error";
+        }
     }
 }

@@ -2,18 +2,20 @@ package searchDB;
 
 import Papers.*;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Properties;
 
 public class SearchDB {
 
-    public SearchDB() {}
+    private Connection conn;
 
-    public static ArrayList<Paper> Searchdb(String sqlInput,String table) throws SQLException {
+    public SearchDB() throws SQLException, URISyntaxException {
+        //String dbUrl = System.getenv("DATABASE_URL");
 
-        ArrayList<Paper> results = new ArrayList<>();
 
-        String dbUrl = System.getenv("DATABASE_URL");
         try {
             // Registers the driver
             Class.forName("org.postgresql.Driver");
@@ -21,7 +23,25 @@ public class SearchDB {
             System.out.println(e);
         }
 
-        Connection conn= DriverManager.getConnection(dbUrl);
+        //conn= DriverManager.getConnection(dbUrl);
+
+        URI connectionParams = new URI(System.getenv("DATABASE_URL"));
+        String jdbcUrl = "jdbc:postgresql://" + connectionParams.getHost() + ":" + connectionParams.getPort() + connectionParams.getPath()+"?sslmode=require";
+        String username = connectionParams.getUserInfo().split(":")[0];
+        String password = connectionParams.getUserInfo().split(":")[1];
+        conn = DriverManager.getConnection(jdbcUrl, username, password);
+
+    }
+
+    public void closeConn() throws SQLException {
+        conn.close();
+    }
+
+    public ArrayList<Paper> Searchdb(String sqlInput,String table) {
+
+        ArrayList<Paper> results = new ArrayList<>();
+
+
 
         try {
             Statement s = conn.createStatement();
@@ -83,7 +103,6 @@ public class SearchDB {
 
             rset.close();
             s.close();
-            conn.close();
         }
         catch (Exception e){
         }
