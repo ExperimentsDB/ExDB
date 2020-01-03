@@ -6,6 +6,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Properties;
 
 public class SearchDB {
@@ -37,16 +38,45 @@ public class SearchDB {
         conn.close();
     }
 
-    public ArrayList<Paper> Searchdb(String sqlInput,String table) {
-
+    public ArrayList<Paper> Searchdb(String searchbarText,String table) {
+        String sqlInput = null;
+        ArrayList<String> columns = new ArrayList<>();
         ArrayList<Paper> results = new ArrayList<>();
 
+        if (searchbarText == null) { sqlInput = "id>0";}
+        else {
 
+            try {//get column names
+                Statement s = conn.createStatement();
 
+                String sqlStr = "select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '" + table + "';";
+                ResultSet rset = s.executeQuery(sqlStr);
+                while (rset.next()) {
+                    columns.add(rset.getString(1));
+                }
+
+                rset.close();
+                s.close();
+            } catch (Exception e) {
+            }
+
+            String[] keywords = searchbarText.split(" ");//get keywords
+            for (String key : keywords) {
+                sqlInput = sqlInput + "( ";
+                Iterator c = columns.iterator();
+                while (c.hasNext()) {
+                    sqlInput = sqlInput + c.next() + " (LIKE %" + key + "%) OR";
+                }
+                sqlInput = sqlInput.substring(0, sqlInput.length() - 3);//trim last OR
+                sqlInput = sqlInput + ") AND ";
+            }
+
+            sqlInput = sqlInput.substring(0, sqlInput.length() - 4);//trim last AND
+        }
         try {
             Statement s = conn.createStatement();
 
-            String sqlStr = "SELECT * FROM "+table+" WHERE " + sqlInput;
+            String sqlStr = "SELECT * FROM "+table+" WHERE " + sqlInput+";";
             ResultSet rset=s.executeQuery(sqlStr);
 
             switch(table){
