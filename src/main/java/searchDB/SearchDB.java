@@ -39,11 +39,11 @@ public class SearchDB {
     }
 
     public ArrayList<Paper> Searchdb(String searchbarText,String table) {
-        String sqlInput = null;
+        String sqlInput = "";
         ArrayList<String> columns = new ArrayList<>();
         ArrayList<Paper> results = new ArrayList<>();
 
-        if (searchbarText == null) { sqlInput = "id>0";}
+        if (searchbarText.equals("")) { sqlInput = " id>0";}
         else {
 
             try {//get column names
@@ -64,6 +64,7 @@ public class SearchDB {
             for (String key : keywords) {
                 sqlInput = sqlInput + "( ";
                 Iterator c = columns.iterator();
+                c.next();
                 while (c.hasNext()) {
                     sqlInput = sqlInput + c.next() + " (ILIKE '%" + key + "%') OR";
                 }
