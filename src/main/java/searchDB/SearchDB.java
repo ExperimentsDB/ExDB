@@ -66,7 +66,7 @@ public class SearchDB {
                 Iterator c = columns.iterator();
                 c.next();
                 while (c.hasNext()) {
-                    sqlInput = sqlInput + c.next() + " (ILIKE '%" + key + "%') OR";
+                    sqlInput = sqlInput + " ("+c.next() + " ILIKE '%" + key + "%') OR";
                 }
                 sqlInput = sqlInput.substring(0, sqlInput.length() - 3);//trim last OR
                 sqlInput = sqlInput + ") AND ";
