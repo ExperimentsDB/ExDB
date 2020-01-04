@@ -1,10 +1,12 @@
 package website;
 
+import Papers.Paper;
 import paperToHTML.ResultsList;
 import searchDB.ChartMaker;
 import searchDB.SearchDB;
 import java.net.URISyntaxException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 // Class for storing the HTML of the websites.
@@ -34,25 +36,43 @@ public class Websites {
         try {
             // Class for searching database
             SearchDB search = new SearchDB();
+            ArrayList<Paper> results = search.Searchdb(SearchBar, Filter1);
+            if (results.isEmpty()){
+                String chartBuilder = "";
+                chartBuilder = websites.get("scripts_resultsChartTemplate").toString().replace("TIMELABELS", "");
+                chartBuilder = chartBuilder.replace("DATASETS", "");
 
-            // Creates a list of results in html using the SearchDB class and function
-            ResultsList cardResults = new ResultsList(search.Searchdb(SearchBar, Filter1));
-            // Class for creating javascript chart using SearchDB class and function
-            ChartMaker chart = new ChartMaker(search.Searchdb(SearchBar, Filter1));
+                // String for modyfing results html to add the results from ResultsList and the chart from chartBuilder
+                String resultsBuilder = websites.get("results").toString().replace("RESULTS", "<div class=\"mx-auto\" style=\"width: 100px;\">\n" +
+                        "                No results\n" +
+                        "              </div>");
+                resultsBuilder = resultsBuilder.replace("SCRIPT", chartBuilder);
 
-            // String for modifying chart template to include time axis and datasets from ChartMAker class.
-            String chartBuilder = "";
-            chartBuilder = websites.get("scripts_resultsChartTemplate").toString().replace("TIMELABELS", chart.getLabels());
-            chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());
+                // Closes connection to database
+                search.closeConn();
 
-            // String for modyfing results html to add the results from ResultsList and the chart from chartBuilder
-            String resultsBuilder = websites.get("results").toString().replace("RESULTS", cardResults.toString());
-            resultsBuilder = resultsBuilder.replace("SCRIPT", chartBuilder);
+                return resultsBuilder;
+            }
+            else {
+                // Creates a list of results in html using the SearchDB class and function
+                ResultsList cardResults = new ResultsList(results);
+                // Class for creating javascript chart using SearchDB class and function
+                ChartMaker chart = new ChartMaker(search.Searchdb(SearchBar, Filter1));
 
-            // Closes connection to database
-            search.closeConn();
+                // String for modifying chart template to include time axis and datasets from ChartMAker class.
+                String chartBuilder = "";
+                chartBuilder = websites.get("scripts_resultsChartTemplate").toString().replace("TIMELABELS", chart.getLabels());
+                chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());
 
-            return resultsBuilder;
+                // String for modyfing results html to add the results from ResultsList and the chart from chartBuilder
+                String resultsBuilder = websites.get("results").toString().replace("RESULTS", cardResults.toString());
+                resultsBuilder = resultsBuilder.replace("SCRIPT", chartBuilder);
+
+                // Closes connection to database
+                search.closeConn();
+
+                return resultsBuilder;
+            }
         } catch (SQLException | URISyntaxException e) {
             // Prints if there is a problem with the database
             System.out.println(e);
