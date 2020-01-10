@@ -36,7 +36,10 @@ public class Websites {
         try {
             // Class for searching database
             SearchDB search = new SearchDB();
-            ArrayList<Paper> results = search.Searchdb(SearchBar, Filter1);
+            ArrayList<Paper> results = new ArrayList<>();
+            try {
+                results = search.Searchdb(SearchBar, Filter1);
+            }catch (Exception ignored) {}
             if (results.isEmpty()){
                 String chartBuilder = "";
                 chartBuilder = websites.get("scripts_resultsChartTemplate").toString().replace("TIMELABELS", "");
@@ -52,12 +55,11 @@ public class Websites {
                 search.closeConn();
 
                 return resultsBuilder;
-            }
-            else {
+            } else {
                 // Creates a list of results in html using the SearchDB class and function
                 ResultsList cardResults = new ResultsList(results);
                 // Class for creating javascript chart using SearchDB class and function
-                ChartMaker chart = new ChartMaker(search.Searchdb(SearchBar, Filter1));
+                ChartMaker chart = new ChartMaker(results);
 
                 // String for modifying chart template to include time axis and datasets from ChartMAker class.
                 String chartBuilder = "";
