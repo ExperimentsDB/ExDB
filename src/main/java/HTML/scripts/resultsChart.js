@@ -8,7 +8,7 @@ Chart.defaults.global.defaultFontColor = '#777';
 let resultsunit1 = new Chart(myChart1, {
     type:'line', //bar, horizontalBar, line, doughnut, radar, polar Area
     data: {
-        labels:['1h', '2h', '3h', '4h', '5h', '6h'],
+        labels:[TIMELABELS],
         datasets:[
             DATASETS
         ]
