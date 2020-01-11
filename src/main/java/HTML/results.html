@@ -55,12 +55,20 @@
                     <form action="/results" method="get">
 
                         <div class="form-row">
+                            <div class="form-group col px-auto mt-2 mb-3">
+                                <input name="search" class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
                             <div class="col px-auto">
-                                <label for="tableFilter">
-                                    Cytokine type
-                                </label>
-                                <select class="form-control" id="tableFilter" name="table">
-                                    <option selected>il8</option>
+                                <!-- <label for="exampleFormControlSelect1">
+                                  Cytokine</label
+                                > -->
+                                <select class="form-control mt-2" id="exampleFormControlSelect1" name="filter1">
+                                    <option selected>Select Cytokine</option>
+                                    <option>il8</option>
                                     <option>il12</option>
                                     <option>nphil</option>
                                     <option>tnfavivo</option>
@@ -68,17 +76,10 @@
                             </div>
 
                             <div class="col px-auto">
-                                <label for="vivovitroFilter">In vivo/In vitro</label>
-                                <select class="form-control" id="vivovitroFilter" name="vivovitro">
-                                    <option selected>In vivo</option>
-                                    <option>In vitro</option>
-                                </select>
+                                <div class="form-group mt-2">
+                                    <button class="btn form-control btn-success" type="submit" role="button">Search</button>
+                                </div>
                             </div>
-
-                            <div class="col">
-                                <button class="btn btn-success" type="submit" role="button">Search</button>
-                            </div>
-
                         </div>
 
                     </form>

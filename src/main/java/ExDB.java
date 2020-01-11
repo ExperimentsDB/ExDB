@@ -50,7 +50,6 @@ public class ExDB extends HttpServlet {
                 resp.getWriter().write("404");
 
         }
-
     }
 
     @Override

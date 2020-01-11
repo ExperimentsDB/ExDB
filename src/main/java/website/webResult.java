@@ -9,7 +9,6 @@ public class webResult extends webHtml {
                 "            <div class=\"card-body\">\n" +
                 "                <h5 class=\"card-title\">TITLE</h5>\n" +
                 "                <p class=\"card-text\"><strong>AUTHOR</strong></p>\n" +
-                "                <p class=\"card-text\">TEXT</p>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
                 "    </a>";

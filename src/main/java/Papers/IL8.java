@@ -1,6 +1,5 @@
 package Papers;
 
-import org.json.simple.parser.ParseException;
 
 // IL8 table papers
 public class IL8 extends Paper {
@@ -12,7 +11,7 @@ public class IL8 extends Paper {
                String infectionmodel, String strain, String age,
                String treatment, String infectionroute, String sample,
                String sampleVolume, String sampleSize, String tUnits,
-               String times) throws ParseException {
+               String times) {
         super(id, link, figure, author, morphotype, liveORfixed, fixationmethod,
                 initialAFinoculum, afumigatusstrain, infectionmodel, strain, age,
                 treatment, infectionroute, sample, sampleVolume, sampleSize, tUnits, times);
