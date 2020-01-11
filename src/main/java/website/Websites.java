@@ -65,6 +65,7 @@ public class Websites {
                 String chartBuilder = "";
                 chartBuilder = websites.get("scripts_resultsChartTemplate").toString().replace("TIMELABELS", chart.getLabels());
                 chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());
+                chartBuilder = chartBuilder.replace("TIMELABELS", chart.getLabels());
 
                 // String for modyfing results html to add the results from ResultsList and the chart from chartBuilder
                 String resultsBuilder = websites.get("results").toString().replace("RESULTS", cardResults.toString());
