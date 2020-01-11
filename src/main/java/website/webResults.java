@@ -59,12 +59,20 @@ public class webResults extends webHtml {
                 "                    <form action=\"/results\" method=\"get\">\n" +
                 "\n" +
                 "                        <div class=\"form-row\">\n" +
+                "                            <div class=\"form-group col px-auto mt-2 mb-3\">\n" +
+                "                                <input name=\"search\" class=\"form-control\" type=\"search\" placeholder=\"What are you looking for?\" aria-label=\"Search\">\n" +
+                "                            </div>\n" +
+                "\n" +
+                "                        </div>\n" +
+                "\n" +
+                "                        <div class=\"form-row\">\n" +
                 "                            <div class=\"col px-auto\">\n" +
-                "                                <label for=\"tableFilter\">\n" +
-                "                                    Cytokine type\n" +
-                "                                </label>\n" +
-                "                                <select class=\"form-control\" id=\"tableFilter\" name=\"table\">\n" +
-                "                                    <option selected>il8</option>\n" +
+                "                                <!-- <label for=\"exampleFormControlSelect1\">\n" +
+                "                                  Cytokine</label\n" +
+                "                                > -->\n" +
+                "                                <select class=\"form-control mt-2\" id=\"exampleFormControlSelect1\" name=\"filter1\">\n" +
+                "                                    <option selected>Select Cytokine</option>\n" +
+                "                                    <option>il8</option>\n" +
                 "                                    <option>il12</option>\n" +
                 "                                    <option>nphil</option>\n" +
                 "                                    <option>tnfavivo</option>\n" +
@@ -72,17 +80,10 @@ public class webResults extends webHtml {
                 "                            </div>\n" +
                 "\n" +
                 "                            <div class=\"col px-auto\">\n" +
-                "                                <label for=\"vivovitroFilter\">In vivo/In vitro</label>\n" +
-                "                                <select class=\"form-control\" id=\"vivovitroFilter\" name=\"vivovitro\">\n" +
-                "                                    <option selected>In vivo</option>\n" +
-                "                                    <option>In vitro</option>\n" +
-                "                                </select>\n" +
+                "                                <div class=\"form-group mt-2\">\n" +
+                "                                    <button class=\"btn form-control btn-success\" type=\"submit\" role=\"button\">Search</button>\n" +
+                "                                </div>\n" +
                 "                            </div>\n" +
-                "\n" +
-                "                            <div class=\"col\">\n" +
-                "                                <button class=\"btn btn-success\" type=\"submit\" role=\"button\">Search</button>\n" +
-                "                            </div>\n" +
-                "\n" +
                 "                        </div>\n" +
                 "\n" +
                 "                    </form>\n" +

@@ -1,6 +1,5 @@
 package Papers;
 
-import org.json.simple.parser.ParseException;
 
 // IL12 table papers
 public class IL12 extends Paper {
@@ -12,7 +11,7 @@ public class IL12 extends Paper {
                 String infectionmodel, String strain, String age,
                 String treatment, String infectionroute, String sample,
                 String sampleVolume, String sampleSize, String tUnits,
-                String times, String cellconcentration, String analysis) throws ParseException {
+                String times, String cellconcentration, String analysis) {
         super(id, link, figure, author, morphotype, liveORfixed, fixationmethod,
                 initialAFinoculum, afumigatusstrain, infectionmodel,
                 strain, age, treatment, infectionroute, sample,

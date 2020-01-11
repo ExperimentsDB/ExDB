@@ -9,7 +9,7 @@ public class DatasetTemplate {
         dataset = "";
     }
 
-    public String toDatasetString(HashMap<String,String> findings, ArrayList<String> sortedTimes) {
+    public String toDatasetString(HashMap<String,String> findings, ArrayList<String> sortedTimes, int id) {
         StringBuilder datasetBuilder = new StringBuilder();
         for (String time : sortedTimes){
             if (findings.containsKey(time)){
@@ -25,7 +25,7 @@ public class DatasetTemplate {
         dataset = dataset.substring(0, dataset.length()-1);
 
         String templateDataset = "{\n" +
-                "            label:'Experiment 1',\n" +
+                "            label:'EXPERIMENT',\n" +
                 "            data:[\n" +
                 "                DATASET\n" +
                 "\n" +
@@ -42,6 +42,8 @@ public class DatasetTemplate {
                 "            lineTension: 0,\n" +
                 "            fill: false\n" +
                 "        }";
+        String exp = "Paper " + id;
+        templateDataset = templateDataset.replace("EXPERIMENT", exp);
         templateDataset = templateDataset.replace("DATASET", dataset);
 
         return templateDataset;

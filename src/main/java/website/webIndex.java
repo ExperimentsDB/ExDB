@@ -59,7 +59,7 @@ public class webIndex extends webHtml{
                 "      </div>\n" +
                 "      <div class=\"row px-2\">\n" +
                 "        <p align=\"justify\"><strong>How to use the page</strong><br>\n" +
-                "          Use the search bar to find literature from a particular author, or from publications from a specific year! <br>\n" +
+                "          Use the search bar to find literature from a particular author, or from publications from a specific year! Or leave it empty to display all the papers! <br>\n" +
                 "          Be sure to select the appropriate cytokine, so we know where to look!\n" +
                 "        </p>\n" +
                 "      </div>\n" +

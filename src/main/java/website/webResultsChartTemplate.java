@@ -21,7 +21,7 @@ public class webResultsChartTemplate extends webHtml {
                 "    options:{\n" +
                 "        title:{\n" +
                 "            display: true,\n" +
-                "            text: 'Testing multiple lines',\n" +
+                "            text: 'Experimental Results',\n" +
                 "            fontSize: 25\n" +
                 "        },\n" +
                 "        legend: {\n" +

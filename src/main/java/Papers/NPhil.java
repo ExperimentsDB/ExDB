@@ -1,6 +1,5 @@
 package Papers;
 
-import org.json.simple.parser.ParseException;
 
 // NPhil table papers
 public class NPhil extends Paper{
@@ -14,7 +13,7 @@ public class NPhil extends Paper{
                  String afumigatusstrain, String infectionmodel, String strain,
                  String age, String treatment, String infectionroute, String sample,
                  String sampleVolume, String sampleSize, String tUnits, String times,
-                 String cellconcentration, String analysis) throws ParseException {
+                 String cellconcentration, String analysis) {
         super(id, link, figure, author, morphotype, liveORfixed, fixationmethod,
                 initialAFinoculum, afumigatusstrain, infectionmodel, strain, age, treatment,
                 infectionroute, sample, sampleVolume, sampleSize, tUnits, times);

@@ -9,12 +9,14 @@ public class cardCreator {
 
     private String author;
     private String link;
+    private int id;
 
 
     public cardCreator(Paper paperin) {
 
-        this.author = paperin.getAuthor();
-        this.link = paperin.getLink();
+        author = paperin.getAuthor();
+        link = paperin.getLink();
+        id = paperin.getId();
 
     }
 
@@ -22,10 +24,9 @@ public class cardCreator {
     public String toString() {
         // Takes result template and replaces the fields
         String template = new webResult().toString();
-        template = template.replace("LINK", this.link);
-        //template = template.replace("TITLE", "");
-        template = template.replace("AUTHOR", this.author);
-        //template = template.replace("TEXT", this.text);
+        template = template.replace("LINK", link);
+        template = template.replace("TITLE", "Paper " + id);
+        template = template.replace("AUTHOR", author);
         return template;
     }
 

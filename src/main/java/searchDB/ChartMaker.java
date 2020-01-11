@@ -33,7 +33,7 @@ public class ChartMaker {
         DatasetList list = new DatasetList();
         for (Paper paper : papers) {
             DatasetTemplate tempLine = new DatasetTemplate();
-            list.toList(tempLine.toDatasetString(paper.getMeasurements(), paper.getTimes()));
+            list.toList(tempLine.toDatasetString(paper.getMeasurements(), paper.getTimes(), paper.getId()));
         }
         list.datasetsMaker();
         datasets = list.datasetsMaker();
