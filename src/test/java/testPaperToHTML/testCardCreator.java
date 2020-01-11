@@ -63,9 +63,8 @@ public class testCardCreator {
     private String templateCreator(Paper paper){
         String template = new webResult().toString();
         template = template.replace("LINK", paper.getLink());
-        //template = template.replace("TITLE", "");
+        template = template.replace("TITLE", "Paper " + paper.getId());
         template = template.replace("AUTHOR", paper.getAuthor());
-        //template = template.replace("TEXT", this.text);
         return template;
     }
 }
