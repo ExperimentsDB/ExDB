@@ -1,95 +1,107 @@
 <!DOCTYPE html>
 <html class="h-100">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Experimental DB</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
-      integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/ExDB/style.css">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+  />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Experimental DB</title>
+  <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+          integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+          crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/ExDB/style.css">
+</head>
 
-  <body class="h-100">
-    <!-- Navbar code -->
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="/ExDB/">ExDB</a>
-        <form class="form-inline btn-toolbar">
-          <div class="btn-toolbar">
-            <a
+<body class="h-100">
+<!-- Navbar code -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/ExDB/">ExDB</a>
+  <form class="form-inline btn-toolbar">
+    <div class="btn-toolbar">
+      <a
               class="btn btn-success my-2 mx-2 my-sm-0"
               href="/ExDB/signin"
               role="button"
-              >Sign in</a
-            >
-            <a
+      >Sign in</a
+      >
+      <a
               class="btn btn-success my-2 mx-2 my-sm-0"
               href="/ExDB/register"
               role="button"
-              >Register</a
-            >
-          </div>
-        </form>
-      </nav>
-      
-    <div class="container h-100">
-      <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-sm-12 col-md-8 col-lg-6 mx-auto">
-          <div class="card text-center d-flex my-auto">
-            <div class="card-body">
-              <!-- Card for search utility -->
-              <h2 class="card-title mb-3">Experimental database</h2>
-              <form action="/ExDB/results" method="get">
-                <div class="form-row">
-                  <div class="form-group col px-auto mt-2 mb-3">
-                    <input name="search" class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
-                  </div>
-                  
-                  <div class="form-group mx-1 px-auto mt-2 mb-3">
-                    <button class="btn btn-success" type="submit" role="button">Search</button>
-                  </div>
-                </div>
+      >Register</a
+      >
+    </div>
+  </form>
+</nav>
 
-                <div class="form-row">
-                  <div class="col px-auto">
-                    <label for="exampleFormControlSelect1">
-                      In vivo/In vitro</label
-                    >
-                    <select class="form-control" id="exampleFormControlSelect1" name="filter1">
-                      <option selected> - </option>
-                      <option>il8</option>
-                      <option>il12</option>
-                      <option>nphil</option>
-                      <option>tnfavivo</option>
-                    </select>
-                  </div>
+<div class="container h-100">
+  <div class="row h-25 px-2 align-items-center">
+    <h1> <strong> Experimental database </strong></h1>
+  </div>
+  <div class="row h-75 px-2">
+    <div class="col-md-4">
+      <div class="row px-2">
+        <p align="justify"><strong>Purpose</strong><br>
+          Our goal is to provide researchers with a tool to streamline their research, minimise wasteful use of their time and funding, all the while minimising animal testing! This is all done by databases
+        </p>
+      </div>
+      <div class="row px-2">
+        <p align="justify"><strong>How to use the page</strong><br>
+          Use the search bar to find literature from a particular author, or from publications from a specific year! <br>
+          Be sure to select the appropriate cytokine, so we know where to look!
+        </p>
+      </div>
+      <div class="row px-2">
+        <p align="justify">
+          Contact us at <a href="mailto:cytodb@outlook.com">cytodb@outlook.com</a> to report bugs and suggest new features!
+        </p>
+      </div>
+    </div>
+    <div class="col-md-8 px-5">
+      <div class="card text-center my-auto">
+        <div class="card-body">
+          <form action="/ExDB/results" method="get">
+            <div class="form-row">
+              <div class="form-group col px-auto mt-2 mb-3">
+                <input name="search" class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
+              </div>
 
-                  <div class="col px-auto">
-                    <label for="exampleFormControlSelect2">Live/Fixed</label>
-                    <select class="form-control" id="exampleFormControlSelect2" name="filter2">
-                      <option selected> - </option>
-                      <option>Live</option>
-                      <option>Fixed</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="col"></div>
-                  <div class="col"></div>
-                </div>
-              </form>
             </div>
-          </div>
+
+            <div class="form-row">
+              <div class="col px-auto">
+                <!-- <label for="exampleFormControlSelect1">
+                  Cytokine</label
+                > -->
+                <select class="form-control mt-2" id="exampleFormControlSelect1" name="filter1">
+                  <option selected>Select Cytokine</option>
+                  <option>il8</option>
+                  <option>il12</option>
+                  <option>nphil</option>
+                  <option>tnfavivo</option>
+                </select>
+              </div>
+
+              <div class="col px-auto">
+                <div class="form-group mt-2">
+                  <button class="btn form-control btn-success" type="submit" role="button">Search</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
         </div>
       </div>
     </div>
-  </body>
+
+  </div>
+</div>
+
+</body>
 </html>
