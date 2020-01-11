@@ -46,11 +46,11 @@ public class webRegister extends webHtml {
                 "  \n" +
                 "      <div class=\"container h-100\">\n" +
                 "        <div class=\"row h-100 justify-content-center align-items-center\">\n" +
-                "          <div class=\"col-sm-12 col-md-8 col-lg-6 mx-auto\">\n" +
+                "          <div class=\"col-sm-12 col-md-8 col-lg-6 mx-auto pt-5 mt-5\">\n" +
                 "            <div class=\"card text-center d-flex my-auto\">\n" +
                 "              <div class=\"card-body\">\n" +
                 "                <!--Card for register utility-->\n" +
-                "                <h2 class=\"card-title mb-3\">Register here!</h2>\n" +
+                "                <h2 class=\"card-title mb-3\"><strong>Coming soon:</strong> Register here!</h2>\n" +
                 "                <p class=\"card-text\">\n" +
                 "                  Already have an account?\n" +
                 "                  <a href=\"/signin\"\n" +
