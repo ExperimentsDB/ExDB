@@ -23,11 +23,11 @@ public class ChartMaker {
         // this iteration deals with return a string of the labels for the graph -> the recording times (e.g. 1hour, 2 hours, 4 hours etc.)
         TimeAxis timeAxis = new TimeAxis();
 
-//        for (Paper paper : papers) {
-//            //PaperGetTimes temp = new PaperGetTimes(paper.getTimes());
-//            timeAxis.addTimes(paper.getTimes());
-//        }
-//        labels = timeAxis.getAxis();
+        for (Paper paper : papers) {
+            //PaperGetTimes temp = new PaperGetTimes(paper.getTimes());
+            timeAxis.addTimes(paper.getTimes());
+        }
+        labels = timeAxis.getAxis();
 
         //this iteration deals with creating each experiment's dataset and giving blank values in recording times of other experiments
         DatasetList list = new DatasetList();
