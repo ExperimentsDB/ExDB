@@ -2,7 +2,7 @@ package website;
 
 public class WebIndex extends WebHtml {
 
-    public WebIndex(){
+    public WebIndex() {
         // Home page
         html = "<!DOCTYPE html>\n" +
                 "<html class=\"h-100\">\n" +
@@ -96,9 +96,21 @@ public class WebIndex extends WebHtml {
                 "\n" +
                 "              <div class=\"col px-auto\">\n" +
                 "                <div class=\"form-group mt-2\">\n" +
-                "                  <button class=\"btn form-control btn-success\" type=\"submit\" role=\"button\">Search</button>\n" +
+                "                  <button class=\"btn form-control btn-success\" type=\"submit\" disabled id=\"submitButton\" role=\"button\">Search</button>\n" +
                 "                </div>\n" +
                 "              </div>\n" +
+                "              <script>\n" +
+                "                 let selection = document.getElementById(\"exampleFormControlSelect1\");\n" +
+                "                 let button = document.getElementById(\"submitButton\");\n" +
+                "                 selection.addEventListener('change', () => {\n" +
+                "                    if (selection.selectedIndex === 0) {\n" +
+                "                       button.disabled = true;\n" +
+                "                    } else {\n" +
+                "                       console.log(button)\n" +
+                "                       button.disabled = false;\n" +
+                "                    }\n" +
+                "                 }) \n" +
+                "              </script>\n" +
                 "            </div>\n" +
                 "\n" +
                 "          </form>\n" +
