@@ -2,7 +2,7 @@ package website;
 
 public class webResultsChartTemplate extends webHtml {
     //Graph template for results
-    public webResultsChartTemplate(){
+    public webResultsChartTemplate() {
         html = "let myChart1 = document.getElementById('myChart1').getContext('2d');\n" +
                 "\n" +
                 "Chart.defaults.global.defaultFontFamily = 'Lato';\n" +
@@ -13,12 +13,29 @@ public class webResultsChartTemplate extends webHtml {
                 "let resultsunit1 = new Chart(myChart1, {\n" +
                 "    type:'line', //bar, horizontalBar, line, doughnut, radar, polar Area\n" +
                 "    data: {\n" +
-                "        labels:[TIMELABELS],\n" +
                 "        datasets:[\n" +
                 "            DATASETS\n" +
                 "        ]\n" +
                 "    },\n" +
                 "    options:{\n" +
+                "       scales: {\n" +
+                "            xAxes: [{\n" +
+                "                scaleLabel: {\n" +
+                "                    display: true,\n" +
+                "                    labelString: \"Time (h)\",\n" +
+                "                },\n" +
+                "                type: 'linear',\n" +
+                "                position: 'bottom'\n" +
+                "            }],\n" +
+                "            yAxes: [{\n" +
+                "                scaleLabel: {\n" +
+                "                    display: true,\n" +
+                "                    labelString: \"Measurements (m)\"\n" +
+                "                },\n" +
+                "                type: 'linear'\n" +
+                "            }]\n" +
+                "        },\n" +
+                "        },\n" +
                 "        title:{\n" +
                 "            display: true,\n" +
                 "            text: 'Experimental Results',\n" +
