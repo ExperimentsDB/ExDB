@@ -65,6 +65,9 @@ public class testCardCreator {
         template = template.replace("LINK", paper.getLink());
         template = template.replace("TITLE", "Paper " + paper.getId());
         template = template.replace("AUTHOR", paper.getAuthor());
+        template = template.replace("FIGURE", "Figure: " + paper.getFigure());
+        template = template.replace("MORPHOTYPE", "Morphotype: " + paper.getMorphotype());
+        template = template.replace("MEASUREMENT", "Measurement units: " + paper.getUnits());
         return template;
     }
 }
