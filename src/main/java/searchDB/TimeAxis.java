@@ -10,16 +10,6 @@ public class TimeAxis {
         timeSet = new ArrayList<>();
     }
 
-    public static void main(String[] args) {
-        TimeAxis a = new TimeAxis();
-        ArrayList<String> strings = new ArrayList<>();
-        strings.add("20");
-        strings.add("10");
-        strings.add("5");
-        strings.add("5");
-        a.addTimes(strings);
-    }
-
     public void addTimes(ArrayList<String> partialsTimes) { //to be used in iterative loop
         //Add the time values for specific experiment
         //sort all the current time values
