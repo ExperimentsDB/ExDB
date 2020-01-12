@@ -1,8 +1,8 @@
 package website;
 
-public class webStylesheetCommon extends webHtml {
+public class WebStylesheetCommon extends WebHtml {
     // Stylesheet for websites
-    public webStylesheetCommon(){
+    public WebStylesheetCommon(){
         html = "html,\n" +
                 "body {\n" +
                 "}\n" +

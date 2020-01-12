@@ -1,18 +1,18 @@
 package paperToHTML;
 
-import Papers.*;
+import papers.*;
 
 import java.util.ArrayList;
 
 // Class for storing all result cards
 public class ResultsList {
-    private ArrayList<cardCreator> results;
+    private ArrayList<CardCreator> results;
 
     public ResultsList( ArrayList<Paper> results){
         // Iterates through the list of papers and creates and stores a card for each result
         this.results = new ArrayList<>();
         for (Paper result : results){
-            this.results.add(new cardCreator(result));
+            this.results.add(new CardCreator(result));
         }
     }
 
@@ -20,7 +20,7 @@ public class ResultsList {
     public String toString(){
         // Creates a string of HTML of the results
         StringBuilder resultsToString = new StringBuilder();
-        for (cardCreator result : results){
+        for (CardCreator result : results){
             resultsToString.append(result.toString());
         }
         return resultsToString.toString();

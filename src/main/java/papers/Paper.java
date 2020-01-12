@@ -1,4 +1,4 @@
-package Papers;
+package papers;
 
 import java.util.ArrayList;
 import java.util.HashMap;

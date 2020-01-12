@@ -11,13 +11,13 @@ public class testWebsites {
     public void testWebsiteList(){
         Websites websites = new Websites();
 
-        Assert.assertEquals(websites.get("index"),new webIndex().toString());
-        Assert.assertEquals(websites.get("results"),new webResults().toString());
-        Assert.assertEquals(websites.get("register"),new webRegister().toString());
-        Assert.assertEquals(websites.get("signin"),new webSignin().toString());
-        Assert.assertEquals(websites.get("result"),new webResult().toString());
-        Assert.assertEquals(websites.get("stylesheets_common"),new webStylesheetCommon().toString());
-        Assert.assertEquals(websites.get("scripts_resultsChartTemplate"),new webResultsChartTemplate().toString());
+        Assert.assertEquals(websites.get("index"),new WebIndex().toString());
+        Assert.assertEquals(websites.get("results"),new WebResults().toString());
+        Assert.assertEquals(websites.get("register"),new WebRegister().toString());
+        Assert.assertEquals(websites.get("signin"),new WebSignin().toString());
+        Assert.assertEquals(websites.get("result"),new WebResult().toString());
+        Assert.assertEquals(websites.get("stylesheets_common"),new WebStylesheetCommon().toString());
+        Assert.assertEquals(websites.get("scripts_resultsChartTemplate"),new WebResultsChartTemplate().toString());
     }
     // @Test
     // public void testGetSearch(){}

@@ -1,4 +1,4 @@
-package Papers;
+package papers;
 
 
 // NPhil table papers

@@ -1,7 +1,7 @@
 package website;
 
-public class webResults extends webHtml {
-    public webResults(){
+public class WebResults extends WebHtml {
+    public WebResults(){
         // Results page
         html = "<html class=\"h-100\">\n" +
                 "<head>\n" +

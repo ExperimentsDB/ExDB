@@ -1,11 +1,11 @@
 package website;
 
 // Abstract class for html storing classes
-public abstract class webHtml {
+public abstract class WebHtml {
 
     protected String html;
 
-    public webHtml(){}
+    public WebHtml(){}
 
     // Function to access html
     public String toString(){

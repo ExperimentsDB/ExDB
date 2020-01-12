@@ -1,8 +1,8 @@
 package website;
 
-public class webResultsChartTemplate extends webHtml {
+public class WebResultsChartTemplate extends WebHtml {
     //Graph template for results
-    public webResultsChartTemplate() {
+    public WebResultsChartTemplate() {
         html = "let myChart1 = document.getElementById('myChart1').getContext('2d');\n" +
                 "\n" +
                 "Chart.defaults.global.defaultFontFamily = 'Lato';\n" +

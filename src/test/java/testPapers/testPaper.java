@@ -1,9 +1,9 @@
 package testPapers;
 
-import Papers.*;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.junit.Test;
+import papers.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;

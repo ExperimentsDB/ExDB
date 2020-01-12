@@ -1,11 +1,11 @@
 package testPaperToHTML;
 
-import Papers.*;
+import papers.*;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.junit.Test;
-import paperToHTML.cardCreator;
-import website.webResult;
+import paperToHTML.CardCreator;
+import website.WebResult;
 
 public class testCardCreator {
     // Tests that the cardCreator creates the correct card with all Paper types
@@ -42,10 +42,10 @@ public class testCardCreator {
                 "testSampleVolume", "testSampleSize", "testTUnits",
                 ",1:test1,2:test2,3:test3,4:test4,5:test5,");
 
-        cardCreator cardIL8 = new cardCreator(testIl8);
-        cardCreator cardIL12 = new cardCreator(testIL12);
-        cardCreator cardNPhil = new cardCreator(testNPhil);
-        cardCreator cardTNFAVivo = new cardCreator(testTNFAVivo);
+        CardCreator cardIL8 = new CardCreator(testIl8);
+        CardCreator cardIL12 = new CardCreator(testIL12);
+        CardCreator cardNPhil = new CardCreator(testNPhil);
+        CardCreator cardTNFAVivo = new CardCreator(testTNFAVivo);
 
         // Function used to create cards from each paper type
         String templateIL8 = templateCreator(testIl8);
@@ -61,7 +61,7 @@ public class testCardCreator {
     }
     // Function to manually create the templates to test the cardCreator cards
     private String templateCreator(Paper paper){
-        String template = new webResult().toString();
+        String template = new WebResult().toString();
         template = template.replace("LINK", paper.getLink());
         template = template.replace("TITLE", "Paper " + paper.getId());
         template = template.replace("AUTHOR", paper.getAuthor());
