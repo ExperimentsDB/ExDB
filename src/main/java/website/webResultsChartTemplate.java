@@ -13,7 +13,6 @@ public class webResultsChartTemplate extends webHtml {
                 "let resultsunit1 = new Chart(myChart1, {\n" +
                 "    type:'line', //bar, horizontalBar, line, doughnut, radar, polar Area\n" +
                 "    data: {\n" +
-                "        labels:[TIMELABELS],\n" +
                 "        datasets:[\n" +
                 "            DATASETS\n" +
                 "        ]\n" +

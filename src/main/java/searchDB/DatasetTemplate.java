@@ -9,20 +9,17 @@ public class DatasetTemplate {
         dataset = "";
     }
 
-    public String toDatasetString(HashMap<String,String> findings, ArrayList<String> sortedTimes, int id) {
+    public String toDatasetString(HashMap<String, String> findings, ArrayList<String> sortedTimes, int id) {
         StringBuilder datasetBuilder = new StringBuilder();
-        for (String time : sortedTimes){
-            if (findings.containsKey(time)){
-                datasetBuilder.append(findings.get(time));
-                datasetBuilder.append(",");
-            }
-            else
-            {
-                datasetBuilder.append(",");
-            }
+        for (String time : sortedTimes) {
+            datasetBuilder.append("{x:");
+            datasetBuilder.append(time);
+            datasetBuilder.append(",y:");
+            datasetBuilder.append(findings.get(time));
+            datasetBuilder.append("},");
         }
         dataset = datasetBuilder.toString();
-        dataset = dataset.substring(0, dataset.length()-1);
+        dataset = dataset.substring(0, dataset.length() - 1);
 
         String templateDataset = "{\n" +
                 "            label:'EXPERIMENT',\n" +

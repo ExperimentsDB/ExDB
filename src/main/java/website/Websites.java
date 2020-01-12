@@ -63,9 +63,8 @@ public class Websites {
 
                 // String for modifying chart template to include time axis and datasets from ChartMAker class.
                 String chartBuilder = "";
-                chartBuilder = websites.get("scripts_resultsChartTemplate").toString().replace("TIMELABELS", chart.getLabels());
-                chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());
-                chartBuilder = chartBuilder.replace("TIMELABELS", chart.getLabels());
+                chartBuilder = websites.get("scripts_resultsChartTemplate").toString().replace("DATASETS", chart.getDatasets());
+                //chartBuilder = chartBuilder.replace("DATASETS", chart.getDatasets());
 
                 // String for modyfing results html to add the results from ResultsList and the chart from chartBuilder
                 String resultsBuilder = websites.get("results").toString().replace("RESULTS", cardResults.toString());
