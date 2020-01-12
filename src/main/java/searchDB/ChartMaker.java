@@ -23,6 +23,7 @@ public class ChartMaker {
         // this iteration deals with return a string of the labels for the graph -> the recording times (e.g. 1hour, 2 hours, 4 hours etc.)
         TimeAxis timeAxis = new TimeAxis();
 
+        // unneeded
         for (Paper paper : papers) {
             //PaperGetTimes temp = new PaperGetTimes(paper.getTimes());
             timeAxis.addTimes(paper.getTimes());
@@ -39,6 +40,7 @@ public class ChartMaker {
         datasets = list.datasetsMaker();
     }
 
+    // unneeded
     public String getLabels() {
         return labels;
     }

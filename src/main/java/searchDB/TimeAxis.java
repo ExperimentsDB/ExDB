@@ -17,7 +17,7 @@ public class TimeAxis {
         Set<String> tempSet = new HashSet<>(timeSet);
         tempSet.addAll(partialsTimes);
         timeSet = new ArrayList<>(tempSet);
-        Collections.sort(timeSet);
+        timeSet.sort(Comparator.comparing(Integer::valueOf));
     }
 
     public ArrayList<String> getAllTimePoints() {
