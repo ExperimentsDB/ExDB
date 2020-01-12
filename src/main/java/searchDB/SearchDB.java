@@ -1,6 +1,6 @@
 package searchDB;
 
-import Papers.*;
+import papers.*;
 import org.json.simple.parser.ParseException;
 
 import java.net.URI;
@@ -8,7 +8,6 @@ import java.net.URISyntaxException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Properties;
 
 public class SearchDB {
 

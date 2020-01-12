@@ -1,6 +1,6 @@
 package testPaperToHTML;
 
-import Papers.*;
+import papers.*;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.junit.Test;
@@ -51,7 +51,7 @@ public class testResultsList {
         // Manually creating a results string to check against ResultsList function
         StringBuilder papersToString = new StringBuilder();
         for (Paper paper : papers){
-            papersToString.append(new cardCreator(paper).toString());
+            papersToString.append(new CardCreator(paper).toString());
         }
         String testResults = papersToString.toString();
 

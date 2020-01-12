@@ -1,8 +1,8 @@
 package website;
 
-public class webRegister extends webHtml {
+public class WebRegister extends WebHtml {
     // Register page
-    public webRegister(){
+    public WebRegister(){
         html = "<html>\n" +
                 "  <head>\n" +
                 "    <meta charset=\"utf-8\" />\n" +

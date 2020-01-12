@@ -1,8 +1,8 @@
 package website;
 
-import Papers.Paper;
+import papers.Paper;
 import paperToHTML.ResultsList;
-import searchDB.ChartMaker;
+import paperToChart.ChartMaker;
 import searchDB.SearchDB;
 import java.net.URISyntaxException;
 import java.sql.SQLException;
@@ -12,18 +12,18 @@ import java.util.HashMap;
 // Class for storing the HTML of the websites.
 // Includes function for searching for results in the database
 public class Websites {
-    private HashMap<String, webHtml> websites;
+    private HashMap<String, WebHtml> websites;
 
     public Websites (){
         // each website mapped to an id
         websites = new HashMap<>();
-        websites.put("index", new webIndex());
-        websites.put("results", new webResults());
-        websites.put("register", new webRegister());
-        websites.put("signin", new webSignin());
-        websites.put("result", new webResult());
-        websites.put("stylesheets_common", new webStylesheetCommon());
-        websites.put("scripts_resultsChartTemplate", new webResultsChartTemplate());
+        websites.put("index", new WebIndex());
+        websites.put("results", new WebResults());
+        websites.put("register", new WebRegister());
+        websites.put("signin", new WebSignin());
+        websites.put("result", new WebResult());
+        websites.put("stylesheets_common", new WebStylesheetCommon());
+        websites.put("scripts_resultsChartTemplate", new WebResultsChartTemplate());
     }
 
     // Function to access websites HashMap

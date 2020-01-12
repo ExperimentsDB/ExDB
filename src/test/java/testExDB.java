@@ -37,7 +37,7 @@ public class testExDB {
         testServlet.doGet(request,response);
 
         String output = writer.getBuffer().toString();
-        Assert.assertThat(output, is(equalTo(new webIndex().toString())));
+        Assert.assertThat(output, is(equalTo(new WebIndex().toString())));
     }
 //    @Test
 //    public void testResults() throws IOException {
@@ -63,7 +63,7 @@ public class testExDB {
         testServlet.doGet(request,response);
 
         String output = writer.getBuffer().toString();
-        Assert.assertThat(output, is(equalTo(new webSignin().toString())));
+        Assert.assertThat(output, is(equalTo(new WebSignin().toString())));
     }
     @Test
     public void testRegister() throws IOException {
@@ -76,7 +76,7 @@ public class testExDB {
         testServlet.doGet(request,response);
 
         String output = writer.getBuffer().toString();
-        Assert.assertThat(output, is(equalTo(new webRegister().toString())));
+        Assert.assertThat(output, is(equalTo(new WebRegister().toString())));
     }
     @Test
     public void testStyle() throws IOException {
@@ -89,7 +89,7 @@ public class testExDB {
         testServlet.doGet(request,response);
 
         String output = writer.getBuffer().toString();
-        Assert.assertThat(output, is(equalTo(new webStylesheetCommon().toString())));
+        Assert.assertThat(output, is(equalTo(new WebStylesheetCommon().toString())));
     }
     @Test
     public void testScript() throws IOException {
@@ -102,7 +102,7 @@ public class testExDB {
         testServlet.doGet(request,response);
 
         String output = writer.getBuffer().toString();
-        Assert.assertThat(output, is(equalTo(new webResultsChartTemplate().toString())));
+        Assert.assertThat(output, is(equalTo(new WebResultsChartTemplate().toString())));
     }
 }
 

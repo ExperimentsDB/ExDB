@@ -1,8 +1,8 @@
 package website;
 
-public class webSignin extends webHtml {
+public class WebSignin extends WebHtml {
     // Sign in page
-    public webSignin(){
+    public WebSignin(){
         html = "<html>\n" +
                 "  <head>\n" +
                 "    <meta charset=\"utf-8\" />\n" +

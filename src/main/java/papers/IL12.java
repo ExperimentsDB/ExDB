@@ -1,4 +1,4 @@
-package Papers;
+package papers;
 
 
 // IL12 table papers

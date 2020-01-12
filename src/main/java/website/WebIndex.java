@@ -1,8 +1,8 @@
 package website;
 
-public class webIndex extends webHtml{
+public class WebIndex extends WebHtml {
 
-    public webIndex(){
+    public WebIndex(){
         // Home page
         html = "<!DOCTYPE html>\n" +
                 "<html class=\"h-100\">\n" +
