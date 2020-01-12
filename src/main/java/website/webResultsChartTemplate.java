@@ -35,7 +35,6 @@ public class webResultsChartTemplate extends webHtml {
                 "                type: 'linear'\n" +
                 "            }]\n" +
                 "        },\n" +
-                "        },\n" +
                 "        title:{\n" +
                 "            display: true,\n" +
                 "            text: 'Experimental Results',\n" +
