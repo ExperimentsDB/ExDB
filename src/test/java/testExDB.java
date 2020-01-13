@@ -39,19 +39,6 @@ public class testExDB {
         String output = writer.getBuffer().toString();
         Assert.assertThat(output, is(equalTo(new WebIndex().toString())));
     }
-//    @Test
-//    public void testResults() throws IOException {
-//        StringWriter writer = new StringWriter();
-//        PrintWriter printer = new PrintWriter(writer);
-//        when(response.getWriter()).thenReturn(printer);
-//        when(request.getServletPath()).thenReturn("/results");
-//
-//        ExDB testServlet = new ExDB();
-//        testServlet.doGet(request,response);
-//
-//        String output = writer.getBuffer().toString();
-//        Assert.assertThat(output, is(equalTo(new webResults().toString())));
-//    }
     @Test
     public void testSignIn() throws IOException {
         StringWriter writer = new StringWriter();
