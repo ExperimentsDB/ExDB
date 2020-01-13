@@ -8,7 +8,7 @@ public class DatasetTemplate {
     public DatasetTemplate() {
         dataset = "";
     }
-
+    // This takes the times and measurements for each paper and puts them in an x and y format
     public String toDatasetString(HashMap<String, String> findings, ArrayList<String> sortedTimes, int id) {
         StringBuilder datasetBuilder = new StringBuilder();
         for (String time : sortedTimes) {
@@ -20,7 +20,7 @@ public class DatasetTemplate {
         }
         dataset = datasetBuilder.toString();
         dataset = dataset.substring(0, dataset.length() - 1);
-
+        //Template for a single dataset
         String templateDataset = "{\n" +
                 "            label:'EXPERIMENT',\n" +
                 "            data:[\n" +
@@ -40,6 +40,7 @@ public class DatasetTemplate {
                 "            fill: false\n" +
                 "        }";
         String exp = "Paper " + id;
+        //Replace placeholders with results
         templateDataset = templateDataset.replace("EXPERIMENT", exp);
         templateDataset = templateDataset.replace("DATASET", dataset);
 

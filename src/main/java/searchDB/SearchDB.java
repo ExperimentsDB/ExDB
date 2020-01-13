@@ -34,7 +34,7 @@ public class SearchDB {
         } catch (Exception e) {
             System.out.println(e);
         }
-
+        //Format for Heroku
         URI connectionParams = new URI(System.getenv("DATABASE_URL"));
         String jdbcUrl = "jdbc:postgresql://" + connectionParams.getHost() + ":" + connectionParams.getPort() + connectionParams.getPath() + "?sslmode=require";
         String username = connectionParams.getUserInfo().split(":")[0];
@@ -42,7 +42,7 @@ public class SearchDB {
         conn = DriverManager.getConnection(jdbcUrl, username, password);
     }
 
-    // For closing the connection outside the class
+    // Required for closing the connection outside the class
     public void closeConn() throws SQLException {
         conn.close();
     }
@@ -52,7 +52,7 @@ public class SearchDB {
         String sqlInput = "";
         ArrayList<String> columns = new ArrayList<>();
         ArrayList<Paper> results = new ArrayList<>();
-
+        // Sets for empty search bar
         if (searchbarText.equals("")) {
             sqlInput = " id>0";
         } else {
@@ -84,7 +84,7 @@ public class SearchDB {
             }
             sqlInput = sqlInput.substring(0, sqlInput.length() - 4);//trim last AND
         }
-
+        // Searches SQL database
         Statement s = conn.createStatement();
         String sqlStr = "SELECT * FROM " + table + " WHERE " + sqlInput + ";";
         ResultSet rset = s.executeQuery(sqlStr);

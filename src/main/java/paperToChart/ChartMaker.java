@@ -14,11 +14,7 @@ public class ChartMaker {
     private String datasets;
 
     public ChartMaker(ArrayList<Paper> papers) {
-        // need to iterate result papers 2 separate times - time complexity O(n)
-        // first iteration will give the actual value of different recording times in all papers. No other way to know this.
-        // this iteration deals with return a string of the labels for the graph -> the recording times (e.g. 1hour, 2 hours, 4 hours etc.)
-
-        //this iteration deals with creating each experiment's dataset and giving blank values in recording times of other experiments
+        //creates each experiment's dataset and puts them into a JavaScript format for the Chart
         DatasetList list = new DatasetList();
         for (Paper paper : papers) {
             DatasetTemplate tempLine = new DatasetTemplate();
@@ -29,7 +25,4 @@ public class ChartMaker {
     }
 
     public String getDatasets() { return datasets;}
-
-
-
 }

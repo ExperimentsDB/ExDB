@@ -22,6 +22,7 @@ public class DatasetList {
         while (i.hasNext()) {
             datasets = datasets + i.next() + ",";
         }
+        // Removes final ","
         datasets = datasets.substring(0, datasets.length()-1);
 
         return datasets;

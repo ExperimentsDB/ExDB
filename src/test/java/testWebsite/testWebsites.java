@@ -19,6 +19,4 @@ public class testWebsites {
         Assert.assertEquals(websites.get("stylesheets_common"),new WebStylesheetCommon().toString());
         Assert.assertEquals(websites.get("scripts_resultsChartTemplate"),new WebResultsChartTemplate().toString());
     }
-    // @Test
-    // public void testGetSearch(){}
 }
